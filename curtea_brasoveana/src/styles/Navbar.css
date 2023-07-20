@@ -35,7 +35,6 @@
     background-color: white;
     margin: 5px;
   }
-  
   @media screen and (max-width: 768px) {
     .nav-links {
       position: absolute;
@@ -54,6 +53,20 @@
   
     .burger {
       display: block;
+    }
+  
+
+    @media screen and (min-width: 769px) {
+      .nav-links {
+        position: static;
+        flex-direction: row;
+        transform: translateX(0);
+        transition: none;
+      }
+  
+      .burger {
+        display: none;
+      }
     }
   }
   

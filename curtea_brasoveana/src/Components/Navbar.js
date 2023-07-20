@@ -14,7 +14,6 @@ const Navbar = () => {
       <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
         <a href="#home">Home</a>
         <a href="#rooms">Rooms</a>
-        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
       </div>
       {/* Burger menu , care are un bug lol*/}

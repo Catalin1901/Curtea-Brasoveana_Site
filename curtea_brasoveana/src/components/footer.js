@@ -9,8 +9,8 @@ function Footer(){
     const whatsappLink = `https://api.whatsapp.com/send?phone=${PhoneNumber}`;
     return(
         <div className="contact">
-        <a href={Link}><FontAwesomeIcon icon={faFacebook} /></a>
-        <a href={whatsappLink} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} /></a>
+        <a href={Link}><FontAwesomeIcon icon={faFacebook} size="3x" /></a>
+        <a href={whatsappLink} target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faWhatsapp} size="3x"   style={{ color: "green" }}/></a>
       </div>
     )
 }
