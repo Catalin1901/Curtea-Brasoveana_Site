@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';// for fontawesome icons
 import { faFacebook } from '@fortawesome/free-brands-svg-icons';// for facebook icon
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';// for whatsapp icon
+import '../styles/footer.css';
 //footer structure , = adresa , telefon, facebook, whatsapp , email , logo , harta?
 function Footer(){
     const PhoneNumber = "0732657369"
