@@ -20,32 +20,34 @@ const randomText = () => {
 function Main(){
     return(
 <div className="container">
-      <div className="row">
-        <div className="col-12 col-xxl-12 custom-border">
-          <img src={hugeImage} alt="Huge Image" className="img-fluid" />
-        </div>
-      </div>
+<div className="row">
+  <div className="col-12 col-xxl-12 custom-border">
+    <img src={hugeImage} alt="Huge Image" className="img-fluid" />
+  </div>
+</div>
 
-      <div className="row">
-        <div className="col-4 custom-border">
-          <p>{randomText()}</p>
-        </div>
-        <div className="col-4 custom-border">
-          <p>{randomText()}</p>
-        </div>
-        <div className="col-4 custom-border">
-          <p>{randomText()}</p>
-        </div>
-      </div>
+<div className="row">
+  <div className="col-12 col-sm-4 custom-border">
+    <p>{randomText()}</p>
+  </div>
+  <div className="col-12 col-sm-4 custom-border">
+    <p>{randomText()}</p>
+  </div>
+  <div className="col-12 col-sm-4 custom-border">
+    <p>{randomText()}</p>
+  </div>
+</div>
 
-      <div className="row">
-        <div className="col-8 custom-border">
-          <p>{randomText()}</p>
-        </div>
-        <div className="col-4 custom-border">
-          <p>{randomText()}</p>
-        </div>
-      </div>
+<div className="row">
+  <div className="col-12 col-sm-8 custom-border">
+    <p>{randomText()}</p>
+  </div>
+  <div className="col-12 col-sm-4 custom-border">
+    <p>{randomText()}</p>
+  </div>
+</div>
+
+
     </div>
     )
 }
