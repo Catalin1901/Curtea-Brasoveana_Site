@@ -1,10 +1,12 @@
+import Carousel from '../Components/Carousel.js';
 const Rooms = () => {
     return (
-        <div>
+     <div>
             <h1>
                 Rooms
             </h1>
-        </div>
+        <Carousel></Carousel>
+    </div>
     );
 };
  
