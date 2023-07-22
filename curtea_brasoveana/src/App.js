@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
 import About from './pages/About.js';
 import Rooms from './pages/Rooms.js';
-
+//Routes to the other pages
 function App() {
   const Title = 'Curtea Brasoveana';
   return (

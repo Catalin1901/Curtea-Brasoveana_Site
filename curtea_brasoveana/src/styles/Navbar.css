@@ -1,4 +1,4 @@
-/* Add these styles to your CSS file */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 }
 
 .navbar-burger {
-  display: none; /* Hide the burger menu by default for larger displays */
+  display: none;
   cursor: pointer;
 }
 

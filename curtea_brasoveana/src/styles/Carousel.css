@@ -1,8 +1,6 @@
-/* Carousel.css */
-
   .carousel-image {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Adjust the height as needed */
+    width: 100%;
+    height: auto; 
   }
   
   /* Optional: Hide the default carousel indicators (dots) if desired */
