@@ -4,7 +4,6 @@ import Room_card from '../Components/Room_card.js';
 const Home = () => {
     return (
         <div>
-            <h1>Curtea Brasoveana</h1>
             <Main/>
             <Room_card/>
         </div>
