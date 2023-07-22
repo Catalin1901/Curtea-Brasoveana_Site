@@ -2,6 +2,8 @@ import React from 'react';
 import High from '../assets/Front.jpeg';
 import Low from '../assets/Low.jpg';
 import '../styles/cover.css';
+import Button from 'react-bootstrap/Button';
+
 
 const Cover = () => {
   const screenWidth = window.innerWidth;
@@ -19,8 +21,10 @@ const Cover = () => {
    <li><a href="/"><span>Home</span></a></li>
    <li><a href="Rooms"><span>Rooms</span></a></li>
    <li><a href="About"><span>About</span></a></li>
+
 </ul>
- 
+    
+    
     <div className="image-container" style={imageStyle}>
       <picture>
         {/* Low-resolution image for smaller screens */}

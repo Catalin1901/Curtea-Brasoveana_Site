@@ -1,0 +1,9 @@
+.contact-container{
+    
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    background-color: #979797bb;
+    height: 50vh;
+    width: 100vw;
+}
+

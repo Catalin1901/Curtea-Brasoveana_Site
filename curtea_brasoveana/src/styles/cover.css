@@ -22,7 +22,7 @@ body, html {
 
 .links a {
   position: relative;
-  background-color: rgba(255, 2, 2, 0.362);
+  background-color: rgba(255, 2, 2, 0);
   color: white;
   padding: 10px;
   text-decoration: none;

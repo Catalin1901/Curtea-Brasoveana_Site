@@ -11862,39 +11862,41 @@ textarea.form-control-lg {
   width: 90vw;
   margin-left: 5vw;
   margin-bottom: 2vw;
+  margin-right: 5vw;
 }
 
 @media (max-width: 576px) {
   .card-group {
     width: 100vw;
     margin-left: 0vw;
+    margin-right: 0vw;
   }
 }
 .card {
-  transition: transform 0.5s ease;
+  transition: transform 0.3s ease;
   height: 75vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  border-color: white;
+  border-color: rgb(255, 255, 255);
 }
 
 .card:hover {
-  transform: scale(1.08);
-  transition: 1s;
+  transform: scale(1.03);
+  transition: 0.5s;
 }
 
 .card-img-top {
   width: 35vw;
   height: 60vh;
   align-self: center;
-  margin-left: 5vw;
+  margin-left: 2vw;
   margin-right: 5vw;
+  margin-left: 5vw;
   border-radius: 2vw;
   transition: transform 0.5s ease;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
 }
 .card-img-top:hover {
   transform: scale(1.08);
-  transition: 1s;
+  transition: 0.6s;
 }
 
 @media (max-width: 576px) {
@@ -11906,7 +11908,27 @@ textarea.form-control-lg {
   }
   .card-img-top:hover {
     transform: scale(1.1);
-    transition: 2s;
+    transition: 0.6s;
+  }
+}
+.card-title {
+  color: black;
+  font-size: 1.5vw;
+}
+
+.card-text {
+  color: black;
+  font-size: 1vw;
+}
+
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 576px) {
+  .card-text {
+    font-size: 3.5vw;
   }
 }
 

@@ -7,10 +7,17 @@ import Suite from '../assets/Suite.jpg';
 import '../styles/room_cards.css';
 
 function GroupExample() {
+    const linkStyle = {
+        textDecoration: 'none', // Remove the underline
+        color: 'black', 
+      };
   return (
     <div>
     <CardGroup>
+        
       <Card>
+        
+        <a href="Rooms" style={linkStyle}>
         <Card.Img  variant="top" src ={Camera_dubla} />
         <Card.Body>
           <Card.Title>Camera Dubla</Card.Title>
@@ -21,8 +28,11 @@ function GroupExample() {
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
+        </a>
       </Card>
+  
       <Card>
+        <a href="Rooms" style={linkStyle}>
         <Card.Img variant="top" src={Camera_tripla}  />
         <Card.Body>
           <Card.Title>Camera Tripla</Card.Title>
@@ -33,11 +43,13 @@ function GroupExample() {
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
+        </a>
       </Card>
       </CardGroup>
 
       <CardGroup>
       <Card>
+        <a href="Rooms" style={linkStyle}>
         <Card.Img variant="top" src={Camera_qvadrupla} />
         <Card.Body>
           <Card.Title>Camera Qvuadrupla</Card.Title>
@@ -48,8 +60,10 @@ function GroupExample() {
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
+        </a>
       </Card>
       <Card>
+        <a href="Rooms" style={linkStyle}>
         <Card.Img variant="top" src={Suite} />
         <Card.Body>
           <Card.Title>Suite</Card.Title>
@@ -60,6 +74,7 @@ function GroupExample() {
         <Card.Footer>
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
+        </a>
       </Card>
     </CardGroup>
     </div>
