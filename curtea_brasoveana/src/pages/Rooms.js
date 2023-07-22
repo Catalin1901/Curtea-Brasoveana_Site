@@ -1,4 +1,5 @@
 import Carousel from '../Components/Carousel.js';
+import '../styles/rooms.css'
 const Rooms = () => {
     return (
      <div>

@@ -1,9 +1,20 @@
-.c-item {
-    height: 480px;
+/* Carousel.css */
+
+  .carousel-image {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Adjust the height as needed */
   }
   
-  .c-img {
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
+  /* Optional: Hide the default carousel indicators (dots) if desired */
+  .carousel-indicators {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .carousel-image {
+     width: 100%;
+    }
+  }
+
+  .card{
+    
   }
