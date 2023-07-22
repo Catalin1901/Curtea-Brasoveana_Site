@@ -1,19 +1,38 @@
+/* Styles for the footer component */
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  margin-top:2rem;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
-.contact {
-    color: white;
-    height: auto;
-    display: flex;
-    padding: auto;
-    margin: 3rem;
-    align-items: flex-start;
-    justify-content: center;
-  }
+.footer-content {
 
-  .address,
-  .phone,
-  .email {
-    margin:3rem;
-  }
-  a {
-    padding: 10px; 
-  }
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo img {
+  max-width: 100px; 
+}
+
+.footer-social {
+
+  align-items: center;
+  justify-content: center;
+  margin-left: auto; 
+  ;
+}
+
+.footer-social a {
+  margin-right: 10px;
+}
+
+.footer-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
