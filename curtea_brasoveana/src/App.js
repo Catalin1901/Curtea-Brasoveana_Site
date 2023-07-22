@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import Navbar from './Components/Navbar.js';
 import Main from './Components/Main.js';
-import Footer from './Components/Footer.js';
+import Footer from './Components/footer.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
 import About from './pages/About.js';

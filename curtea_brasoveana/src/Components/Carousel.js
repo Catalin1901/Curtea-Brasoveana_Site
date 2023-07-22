@@ -4,7 +4,7 @@ import { Image } from 'react-bootstrap';
 import FirstSlideImage from '../assets/Front.jpeg';
 import SecondSlideImage from '../assets/Front2.jpeg';
 import ThirdSlideImage from '../assets/Front3.jpeg';
-import '../styles/carousel.css';
+import '../styles/Carousel.css';
 //From React-Bootstrap: 
 function CardWithCarousel() {
   return (
