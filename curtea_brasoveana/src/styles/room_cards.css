@@ -1,0 +1,14 @@
+.card-img-top  {
+    width: '20px' !important; 
+    height: '20px' !important;
+    align-self: 'center'; 
+  }
+  
+  @media (max-width: 500px) {
+    .card-img-top  {
+        width: '20px';
+        height: '20px';
+        align-self: 'center';
+
+    }
+  }
