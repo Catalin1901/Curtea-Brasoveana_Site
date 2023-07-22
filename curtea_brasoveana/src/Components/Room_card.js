@@ -9,7 +9,6 @@ import '../styles/test.css';
 function GroupExample() {
   return (
     <div>
-        
     <CardGroup>
       <Card>
         <Card.Img  variant="top" src ={Camera_dubla} />
