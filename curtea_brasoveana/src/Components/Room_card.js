@@ -4,7 +4,7 @@ import Camera_dubla from '../assets/Camera_dubla.jpg';
 import Camera_tripla from '../assets/Camera_tripla.jpg';
 import Camera_qvadrupla from '../assets/Camera_qvadrupla.jpg';
 import Suite from '../assets/Suite.jpg';
-import '../styles/test.css';
+import '../styles/room_cards.css';
 
 function GroupExample() {
   return (
