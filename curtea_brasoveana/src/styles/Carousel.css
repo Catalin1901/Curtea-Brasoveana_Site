@@ -1,0 +1,18 @@
+  .carousel-image {
+    width: 100%;
+    height: auto; 
+  }
+  
+  /* Optional: Hide the default carousel indicators (dots) if desired */
+  .carousel-indicators {
+    display: none;
+  }
+  @media (max-width: 767px) {
+    .carousel-image {
+     width: 100%;
+    }
+  }
+
+  .card{
+    
+  }

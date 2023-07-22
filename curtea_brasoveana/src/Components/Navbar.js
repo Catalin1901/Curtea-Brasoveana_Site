@@ -1,29 +1,34 @@
 import React, { useState } from 'react';
-import '../styles/Navbar.css';
+import '../styles/navbar.css';
 
 const Navbar = () => {
-  const [isNavOpen, setNavOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleNav = () => {
-    setNavOpen(!isNavOpen);
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 //un navbar simplu cu un logo si un burger menu
   return (
     <nav className="navbar">
-      <div className="logo">logo</div>
-      <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-        <a href="/">Home</a>
-        <a href="Rooms">Rooms</a>
-        <a href="About">Contact</a>
-      </div>
-      {/* Burger menu , care are un bug lol*/}
-      <div className="burger" onClick={toggleNav}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
-    </nav>
+    <div className="navbar-logo">Your Logo</div>
+
+    {/* Burger menu for smaller displays */}
+    <div className={`navbar-burger ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuToggle}>
+      <div className="burger-line"></div>
+      <div className="burger-line"></div>
+      <div className="burger-line"></div>
+    </div>
+
+    {/* Links */}
+    <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
+        <li><a href="/">Home</a></li>
+        <li><a href="Rooms">Rooms</a></li>
+        <li><a href="About">Contact</a></li>
+    </ul>
+  </nav>
   );
 };
 
 export default Navbar;
+
+

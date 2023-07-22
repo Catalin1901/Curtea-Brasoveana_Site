@@ -1,10 +1,15 @@
+import  '../styles/about.css'
+import hugeImage from  '../assets/Front.jpeg'
 const About = () => {
     return (
-        <div>
-            <h1>
-                About
-            </h1>
-        </div>
+    <div>
+    <div class="container-fluid p-0">
+    <div class="image-container">
+    <img src={hugeImage} alt="Huge Image" className="img-fluid" />
+    </div>
+  </div>
+</div>
+            
     );
 };
  

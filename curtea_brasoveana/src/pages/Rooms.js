@@ -1,10 +1,13 @@
+import Carousel from '../Components/Carousel.js';
+import '../styles/rooms.css'
 const Rooms = () => {
     return (
-        <div>
+     <div>
             <h1>
                 Rooms
             </h1>
-        </div>
+        <Carousel></Carousel>
+    </div>
     );
 };
  
