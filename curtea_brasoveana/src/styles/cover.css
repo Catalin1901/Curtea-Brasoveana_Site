@@ -1,30 +1,27 @@
 /* Reset the default positioning */
-body, html {
-  margin: 0;
-  padding: 0;
-}
 
 /* Center the .links element both horizontally and vertically */
 .links {
   position: absolute;
   top: 50%; /* Move the top edge of the element to the vertical center */
   left: 50%; /* Move the left edge of the element to the horizontal center */
-  transform: translate(-50%, -50%); /* Center the element with respect to its own dimensions */
+  transform: translate(-50%, -50%); /* Move the element up and left by 50% of its own width and height */
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: auto;
+;
   display: flex;
 }
 
 .links li {
-  margin-right: 20px;
+  margin:10px 10px 100px 100px;
 }
 
 .links a {
   position: relative;
-  background-color: rgba(255, 2, 2, 0);
+  background-color: rgba(255, 2, 2, 0.362);
   color: white;
-  padding: 10px;
+
   text-decoration: none;
 }
 
@@ -33,18 +30,45 @@ body, html {
   text-decoration: underline;
 }
 
-.links a span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
+
+a {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  font-size: xx-large;
+  display: inline-block;
+  margin-right:4rem;
+  
+  
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-.links img {
-  max-width: 100%;
+a:before{
+  content: '';
+  background: #54b3d6;
   display: block;
   position: absolute;
-  top: 0;
+  bottom: -3px;
   left: 0;
-  z-index: 99;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
 }
+
+a:hover {
+ background-position: 0;
+}
+
+a:hover::before{
+  width: 100%;
+}
+
+/* Presentational Styles */
