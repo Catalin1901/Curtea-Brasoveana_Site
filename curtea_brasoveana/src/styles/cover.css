@@ -1,0 +1,15 @@
+.container-fluid {
+  height: 100%;
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+  height: 150%;
+}
+
+.img-fluid {
+  object-fit: cover;
+  width: 150%;
+  height: 100%;
+}
