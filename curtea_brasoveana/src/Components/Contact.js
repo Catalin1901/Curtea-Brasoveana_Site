@@ -1,3 +1,4 @@
+/*
 import '../../src/styles/contact.css'
 import GoogleMapReact from '@react-google-maps'
 import { Icon } from '@iconify/react'
@@ -16,16 +17,19 @@ const LocationPin = ({ text }) => (
       <p className="pin-text">{text}</p>
     </div>
   )
-
+*/
 function Contact() {
     return (
+        
         <div className="contact-container">
+            {/* 
             <div className="Date de contact">
                 <h1>Date de contact</h1>
                 <p>Adresa: Strada Republicii nr. 56, Brașov 500030</p>
                 <p>Telefon: 0268 477 477</p>
                 <p>Email: asdasd@yahoo.com</p>
             </div>
+            <div className="google-map">}
             <div className="location">
                 <h1>Locatie</h1>
                 <div className="google-map">
@@ -40,8 +44,10 @@ function Contact() {
                             text={location.address}
                         />
                     </GoogleMapReact>
+    
                 </div>
             </div>
+            */}
 
         </div>
 
