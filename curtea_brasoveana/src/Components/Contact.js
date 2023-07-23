@@ -1,8 +1,8 @@
 /*
 import '../../src/styles/contact.css'
-import GoogleMapReact from '@react-google-maps'
-import { Icon } from '@iconify/react'
-import locationIcon from '@iconify/icons-mdi/map-marker'
+// import GoogleMapReact from '@react-google-maps'
+// import { Icon } from '@iconify/react'
+// import locationIcon from '@iconify/icons-mdi/map-marker'
 
 
 const location = {
@@ -17,7 +17,7 @@ const LocationPin = ({ text }) => (
       <p className="pin-text">{text}</p>
     </div>
   )
-*/
+
 function Contact() {
     return (
         
@@ -32,7 +32,7 @@ function Contact() {
             <div className="google-map">}
             <div className="location">
                 <h1>Locatie</h1>
-                <div className="google-map">
+                {/* <div className="google-map">
                     <GoogleMapReact
                         bootstrapURLKeys={{ key: '' }}
                         defaultCenter={location}
@@ -44,7 +44,6 @@ function Contact() {
                             text={location.address}
                         />
                     </GoogleMapReact>
-    
                 </div>
             </div>
             */}
