@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import { MenuData } from '../data/MenuData.js'
 import { Button } from './Button.js';
 import {FaBars} from 'react-icons/fa'
+
 const Nav = styled.nav`
   height: 60px;
   display: flex;
