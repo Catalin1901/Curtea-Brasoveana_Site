@@ -1,34 +1,78 @@
-import React, { useState } from 'react';
-import '../styles/navbar.css';
+import React from 'react'
+import styled , {css} from 'styled-components'
+import {Link} from 'react-router-dom'
+import { MenuData } from '../data/MenuData.js'
+import { Button } from './Button.js';
+import {FaBars} from 'react-icons/fa'
 
-const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+const Nav = styled.nav`
+  height: 60px;
+  display: flex;
+  background: red;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+`;
+const NavLink = css`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+`;
 
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-//un navbar simplu cu un logo si un burger menu
+const Logo = styled(Link)`
+  ${NavLink}
+  font-style: italic;
+`;
+
+const MenuBars = styled.i`
+display: none;
+`;
+
+const NavMenu = styled.div`
+display: flex;
+align-items: center;
+margin-right: -2rem;
+@media screen and (max-width: 768px) {
+    display: none;
+}
+`;
+
+const NavMenuLinks = styled(Link)`
+${NavLink}
+`;
+
+
+const NavButton = styled.div`
+display: flex;
+align-items: center;
+margin-right: 1.5rem;
+@media screen and (max-width: 768px) {
+    display: none;
+}
+`;
+function Navbar() {
   return (
-    <nav className="navbar">
-    <div className="navbar-logo">Your Logo</div>
+    <Nav>
+      <Logo to="/">Curtea Brasoveana</Logo>
+      <MenuBars />
+      <NavMenu>
+        {MenuData.map((item,index) => (
+          <NavMenuLinks to={item.link} key={index}>
+            {item.title}
+          </NavMenuLinks>
+))}
+      </NavMenu>
+      <NavButton>
+        <Button to="/about" primary='true'>About us</Button>
+      </NavButton>
+    </Nav>
+  )
+}
 
-    {/* Burger menu for smaller displays */}
-    <div className={`navbar-burger ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuToggle}>
-      <div className="burger-line"></div>
-      <div className="burger-line"></div>
-      <div className="burger-line"></div>
-    </div>
-
-    {/* Links */}
-    <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="Rooms">Rooms</a></li>
-        <li><a href="About">Contact</a></li>
-    </ul>
-  </nav>
-  );
-};
-
-export default Navbar;
-
-
+export default Navbar

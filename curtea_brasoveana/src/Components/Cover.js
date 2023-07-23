@@ -17,12 +17,7 @@ const Cover = () => {
 
   return (
     <div>
-  <ul className='links'>
-   <li><a href="/"><span>Home</span></a></li>
-   <li><a href="Rooms"><span>Rooms</span></a></li>
-   <li><a href="About"><span>About</span></a></li>
 
-</ul>
     
     
     <div className="image-container" style={imageStyle}>
