@@ -64,6 +64,7 @@ const HeroImage = styled.img`
 `;
 const HeroContent = styled.div`
     position: relative;
+    margin-top: 25rem;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -162,12 +163,13 @@ function Hero({ slides  }) {
                                 <HeroContent>
                                     <h1>{slide.title}</h1>
                                     <p>{slide.price}</p>
+                                    {/*
                                     <Button to={slide.path} primary="true"
-                                    css={`max-width: 120px;`}
-                                    >
-                                        {slide.label}
+                                    css={`max-width: 100px;`}
+                                    > {slide.label}
                                         <Arrow/>
                                     </Button>
+                        */}
                                 </HeroContent>
                             </HeroSlider>
             )}

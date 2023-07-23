@@ -22,6 +22,7 @@ const NavLink = css`
   height: 100%;
   cursor: pointer;
   text-decoration: none;
+  font-size: 1.5rem;
 `;
 
 const Logo = styled(Link)`
@@ -66,11 +67,11 @@ margin-right: 1.5rem;
     display: none;
 }
 `;
-function Navbar() {
+function Navbar({toggle}) {
   return (
     <Nav>
-      <Logo to="/">Curtea Brasoveana</Logo>
-      <MenuBars />
+      <Logo to="/">Curtea Brasoveana Logo</Logo>
+      <MenuBars onClick={toggle}/>
       <NavMenu>
         {MenuData.map((item,index) => (
           <NavMenuLinks to={item.link} key={index}>
