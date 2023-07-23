@@ -11865,13 +11865,6 @@ textarea.form-control-lg {
   margin-right: 5vw;
 }
 
-@media (max-width: 576px) {
-  .card-group {
-    width: 100vw;
-    margin-left: 0vw;
-    margin-right: 0vw;
-  }
-}
 .card {
   transition: transform 0.3s ease;
   height: 75vh;
@@ -11899,19 +11892,6 @@ textarea.form-control-lg {
   transition: 0.6s;
 }
 
-@media (max-width: 576px) {
-  .card-img-top {
-    width: 80vw;
-    height: 50vh;
-    align-self: center;
-    border-radius: 2vw;
-    margin-left: 10vw;
-  }
-  .card-img-top:hover {
-    transform: scale(1.1);
-    transition: 0.6s;
-  }
-}
 .card-title {
   color: black;
   font-size: 1.5vw;
@@ -11926,18 +11906,6 @@ textarea.form-control-lg {
   font-weight: 100;
 }
 
-@media (max-width: 576px) {
-  .card-title {
-    font-size: 4vw;
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .card-text {
-    font-size: 3.5vw;
-    text-align: center;
-  }
-}
 .camere {
   align-self: center;
   margin-bottom: 2vw;
@@ -11945,7 +11913,32 @@ textarea.form-control-lg {
   font-size: 3vw;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 800px) {
+  .card-group {
+    width: 100vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    flex-direction: column;
+  }
+  .card-img-top {
+    width: 90vw;
+    height: 50vh;
+    align-self: center;
+    border-radius: 2vw;
+    margin-left: 5vw;
+  }
+  .card-img-top:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+  }
+  .card-title {
+    font-size: 4vw;
+    text-align: center;
+  }
+  .card-text {
+    font-size: 3.5vw;
+    text-align: center;
+  }
   .camere {
     font-size: 6vw;
   }
