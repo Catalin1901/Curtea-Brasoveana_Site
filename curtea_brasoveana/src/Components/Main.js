@@ -17,7 +17,7 @@ const randomText = () => {
 function Main(){
     return(
       <div>
-        <Cover/>
+       {/* <Cover/> */}
       
 <div className="container">
 

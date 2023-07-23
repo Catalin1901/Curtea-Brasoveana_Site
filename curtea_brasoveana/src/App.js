@@ -18,14 +18,14 @@ function App() {
     <div className="App">
       <GlobalStyle/>
       <Navbar /> 
+      
       <div className="content">
-
-        <Routes>
+      <Routes>
         <Route exact path='/'element={<Home />} />
         <Route path='/about'element={<About />} />
         <Route path='/rooms'element={<Rooms />} />
 
-        </Routes>
+      </Routes>
       </div>
       <Footer />
     </div>

@@ -8,7 +8,6 @@ import {FaBars} from 'react-icons/fa'
 const Nav = styled.nav`
   height: 60px;
   display: flex;
-  background: red;
   justify-content: space-between;
   padding: 1rem 2rem;
   z-index: 100;
@@ -30,8 +29,19 @@ const Logo = styled(Link)`
   font-style: italic;
 `;
 
-const MenuBars = styled.i`
+const MenuBars = styled(FaBars)`
 display: none;
+@media screen and (max-width: 768px) {
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10%, 25%);
+    color: #fff;
+}
 `;
 
 const NavMenu = styled.div`
@@ -69,7 +79,7 @@ function Navbar() {
 ))}
       </NavMenu>
       <NavButton>
-        <Button to="/about" primary='true'>About us</Button>
+        <Button to="/about" primary='true'>Book now</Button>
       </NavButton>
     </Nav>
   )
