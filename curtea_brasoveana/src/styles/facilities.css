@@ -1,0 +1,41 @@
+/* ImageGallery.css */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .gallery-item {
+    position: relative; /* Make the container position relative */
+    width: 25%;
+    height: auto;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the background color and opacity as desired */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8; /* Set a default opacity to make the overlay partially visible */
+  }
+  
+  .visible {
+    opacity: 1; /* Make the overlay fully visible */
+  }
+  
+  .text {
+    color: #fff; /* Change the text color */
+    font-size: 18px; /* Change the font size */
+  }

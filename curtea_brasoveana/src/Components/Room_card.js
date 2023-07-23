@@ -13,6 +13,10 @@ function GroupExample() {
       };
   return (
     <div>
+      <div className = "camere">
+      Camerele noastre
+      </div>
+      
     <CardGroup>
         
       <Card>
