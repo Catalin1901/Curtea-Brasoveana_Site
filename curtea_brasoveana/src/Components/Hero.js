@@ -4,6 +4,7 @@ import { SliderData } from '../data/SliderData';
 import { Button } from 'react-bootstrap';
 import {IoMdArrowRoundForward} from 'react-icons/io'
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5'
+//Book now pe mobil in centru la poza;
 const HeroSection = styled.section`
     height: 100vh;
     max-height: 1100px;
@@ -118,7 +119,7 @@ z-index: 10;
 `;
 
 
-function Hero({ slides  }) {
+function Hero({ slides }) {
     const [current, setCurrent] = useState(0)
     const length = slides.length
     const timeout = useRef(null)
