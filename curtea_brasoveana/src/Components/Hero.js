@@ -4,12 +4,15 @@ import { SliderData } from '../data/SliderData';
 import { Button } from 'react-bootstrap';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
-
+const Separator = styled.div`
+  height: ${(props) => props.space}px; /* Set the desired space using the 'space' prop */
+`;
 const HeroSection = styled.section`
   height: 100vh;
   max-height: 1100px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 10rem;
 `;
 
 const HeroWrapper = styled.div`
@@ -150,7 +153,7 @@ function Hero({ slides }) {
         setCurrent(current => (current === length - 1 ? 0 : current + 1));
       };
   
-      timeout.current = setTimeout(nextSlide, 4000); // Adjust the timeout duration
+      timeout.current = setTimeout(nextSlide, 5000); // Adjust the timeout duration
   
       return function () {
         if (timeout.current) {

@@ -27,13 +27,50 @@ const NavLink = css`
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 2rem;
+  margin-right: 1.5rem;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
-`;
+  position: relative; /* Make sure to set position to relative */
 
+  @media (min-width: 768px) {
+  /* Add the :before pseudo-element styles */
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cd853f;;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+  }
+
+
+  &:hover:before,
+  &:focus:before,
+  &:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+
+  }
+}
+`;
 const Logo = styled(Link)`
   ${NavLink}
   font-style: italic;
@@ -85,7 +122,7 @@ const NavWithTransition = styled.nav`
   position: fixed;
   width: 100%;
   background: ${props => (props.transparent ? 'transparent' : '#cd853f')};
-  transition: background-color 0.6s ease; /* Add a smooth transition */
+  transition: background-color 0.6s ease;
 
   @media (max-width: 769px) {
     background: none;
