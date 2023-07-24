@@ -15,6 +15,7 @@ const Nav = styled.nav`
   position: fixed;
   width: 100%;
   background: ${props => (props.transparent ? 'transparent' : '#cd853f')};
+  transition: 0.5s ease;
   @media (max-width: 769px) {
     background: none;
   }

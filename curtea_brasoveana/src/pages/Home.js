@@ -4,6 +4,7 @@ import { SliderData } from '../data/SliderData.js';
 import Hero from '../Components/Hero.js';
 import Contact from '../Components/Contact.js';
 import Facilities from '../Components/Facilities.js';
+import Reviews from '../Components/Reviews.js';
 
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <Main/>
             <Facilities/>
             <Room_card/>
+            <Reviews/>
             <Contact/>
         </div>
     );

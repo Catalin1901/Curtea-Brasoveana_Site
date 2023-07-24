@@ -11897,6 +11897,7 @@ textarea.form-control-lg {
   font-size: 1.5vw;
   text-align: center;
   font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .card-text {
@@ -11904,6 +11905,7 @@ textarea.form-control-lg {
   font-size: 1vw;
   text-align: center;
   font-weight: 100;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .camere {
@@ -11911,6 +11913,7 @@ textarea.form-control-lg {
   margin-bottom: 2vw;
   text-align: center;
   font-size: 3vw;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .card-footer {
@@ -11951,6 +11954,15 @@ textarea.form-control-lg {
   }
   .camere {
     font-size: 6vw;
+  }
+  .card-footer {
+    text-align: center;
+    font-size: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    align-self: center;
+    margin-left: 10%;
   }
 }
 
