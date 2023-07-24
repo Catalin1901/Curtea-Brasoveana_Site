@@ -4,7 +4,9 @@ import { SliderData } from '../data/SliderData';
 import { Button } from 'react-bootstrap';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
-
+const Separator = styled.div`
+  height: ${(props) => props.space}px; /* Set the desired space using the 'space' prop */
+`;
 const HeroSection = styled.section`
   height: 100vh;
   max-height: 1100px;

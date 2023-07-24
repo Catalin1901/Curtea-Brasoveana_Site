@@ -45,7 +45,7 @@ const NavLink = css`
     left: 0;
     right: 0;
     bottom: 0;
-    background: #fff;
+    background: #cd853f;;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -56,9 +56,10 @@ const NavLink = css`
     transition-duration: 0.5s;
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
+
   }
 
-  /* Add the :hover, :focus, and :active styles for the :before pseudo-element */
+
   &:hover:before,
   &:focus:before,
   &:active:before {
@@ -66,6 +67,7 @@ const NavLink = css`
     transform: scaleX(1);
     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+
   }
 }
 `;
