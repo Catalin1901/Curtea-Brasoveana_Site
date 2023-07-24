@@ -34,8 +34,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">78/90<FontAwesomeIcon icon={faEuroSign} /></small>
-          <small className="text-muted">1,2<FontAwesomeIcon icon={faUser} /></small>
+          <small className="text-muted">78/90 <FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">1-2 <FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
@@ -50,8 +50,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <small className="text-muted">100/110<FontAwesomeIcon icon={faEuroSign} /></small>
-          <small className="text-muted">2,3<FontAwesomeIcon icon={faUser} /></small>
+        <small className="text-muted">100/110 <FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">2-3 <FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
@@ -68,8 +68,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <small className="text-muted">110/120/130<FontAwesomeIcon icon={faEuroSign} /></small>
-          <small className="text-muted">2,3,4<FontAwesomeIcon icon={faUser} /></small>
+        <small className="text-muted">110/120/130 <FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">2-3-4 <FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
@@ -83,8 +83,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-        <small className="text-muted">110/120/130<FontAwesomeIcon icon={faEuroSign} /></small>
-          <small className="text-muted">2,3,4<FontAwesomeIcon icon={faUser} /></small>
+        <small className="text-muted">110/120/130 <FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">2-3-4 <FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
