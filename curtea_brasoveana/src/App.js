@@ -9,6 +9,7 @@ import About from './pages/About.js';
 import Rooms from './pages/Rooms.js';
 import GlobalStyle from './globalStyle';
 import Dropdown from './Components/Dropdown.js';
+import WhatsAppLogo from './Components/Whatsapp.js';
 //Routes to the other pages
 function App() {
   const Title = 'Curtea Brasoveana';
@@ -22,6 +23,7 @@ function App() {
       <GlobalStyle/>
       <Navbar toggle={toggle}/> 
       <Dropdown isOpen={isOpen} toggle={toggle}/>
+      <WhatsAppLogo />
       <div className="content">
       <Routes>
         <Route exact path='/'element={<Home />} />

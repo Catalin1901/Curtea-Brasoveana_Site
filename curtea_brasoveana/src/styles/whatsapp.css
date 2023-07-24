@@ -1,0 +1,11 @@
+.whatsapp-logo {
+    position: fixed;
+    cursor: pointer;
+    z-index: 9999;
+    padding-bottom: 35px;
+    padding-left:1%;
+
+  }
+  .whatsapp-logo a {
+    color: green;
+  }
