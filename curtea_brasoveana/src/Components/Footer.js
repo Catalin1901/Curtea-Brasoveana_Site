@@ -1,7 +1,7 @@
 import '../styles/footer.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   const whatsappLink = 'https://api.whatsapp.com/send?phone=1234567890'; // Replace with your actual WhatsApp link
@@ -16,10 +16,9 @@ const Footer = () => {
         </div>
         <div className="footer-social">
           <a href={facebookLink} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faFacebook} size="2x" />
-          </a>
+          <FontAwesomeIcon icon={faFacebookF} style={{color: "#005eff",}} size="3x" />          </a>
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ color: "green" }} />
+          <FontAwesomeIcon icon={faSquareWhatsapp} size="3x" style={{color: "#25d366",}} />
           </a>
         </div>
       </div>
