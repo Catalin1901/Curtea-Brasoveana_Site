@@ -136,6 +136,9 @@ const SliderButtons = styled.div`
   right: 50px;
   display: flex;
   z-index: 10;
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 function Hero({ slides }) {
