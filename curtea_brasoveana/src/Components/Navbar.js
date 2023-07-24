@@ -35,7 +35,11 @@ const NavLink = css`
   text-decoration: none;
   font-size: 1.5rem;
   position: relative; 
-  
+  text-shadow: 
+  -0.5px -0.5px 0 black,
+   0.5px -0.5px 0 black,
+  -0.5px 0.5px 0 black,
+   0.5px 0.5px 0 black;
   @media (min-width: 768px) {
   /* Add the :before pseudo-element styles */
   &:before {

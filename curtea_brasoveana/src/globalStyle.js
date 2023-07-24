@@ -12,6 +12,9 @@ html, body {
 a {
     text-decoration: none;
   }
+text{
+    font-family: 'Times New Roman', Times, serif;
+}
 `;
 
 export default GlobalStyle;

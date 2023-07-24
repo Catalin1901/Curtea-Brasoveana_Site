@@ -15,6 +15,12 @@
     font-weight: 200;
     margin-left: 10vw;
     margin-right: 10vw;
+    text-shadow: 
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px 0.5px 0 black,
+     0.5px 0.5px 0 black;
+    
 }
 
 
@@ -87,6 +93,11 @@
     transform: translateX(9vw);
     text-align: center;
     align-self: center;
+    text-shadow: 
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px 0.5px 0 black,
+     0.5px 0.5px 0 black;
 }
 
 .gallery-item:hover .text {

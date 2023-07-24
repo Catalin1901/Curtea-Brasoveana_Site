@@ -39,7 +39,11 @@
     margin-bottom: 2%;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
-
+    text-shadow: 
+    -0.5px -0.5px 0 black,
+     0.5px -0.5px 0 black,
+    -0.5px 0.5px 0 black,
+     0.5px 0.5px 0 black;
 
 }
 

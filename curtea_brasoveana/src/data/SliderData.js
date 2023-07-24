@@ -20,8 +20,8 @@ export const SliderData = [
         alt: 'House'
     },
     {
-        title: 'Cioata de seara',
-        price: 'Ai cerut 1 ai primit 0.7',
+        title: 'Imagine de seara',
+        price: 'SuperCute',
         path: '/home',
         label: 'View Home',
         image: ImageThree,

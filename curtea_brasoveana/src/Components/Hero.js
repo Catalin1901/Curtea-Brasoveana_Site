@@ -85,6 +85,11 @@ const HeroContent = styled.div`
   flex-direction: column;
   max-width: 1600px;
   width: calc(100% - 100px);
+  text-shadow: 
+  -0.5px -0.5px 0 black,
+   0.5px -0.5px 0 black,
+  -0.5px 0.5px 0 black,
+   0.5px 0.5px 0 black;
   color: #fff;
   h1 {
     font-size: clamp(1.5rem, 10vw, 2.5rem);
