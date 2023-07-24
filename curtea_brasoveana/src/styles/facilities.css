@@ -73,8 +73,8 @@
 } */
 
 .overlay:hover {
-    background-color: rgba(0, 0, 0, .9);
-    opacity: .8;
+    background-color: #47311d;
+    opacity: .7;
     transform: scaleY(1.1);
 }
 
@@ -166,7 +166,7 @@
     } */
     
     .overlay:hover {
-        background-color: rgba(0, 0, 0, .9);
+        background-color: #47311d;
         opacity: .7;
         transform: scaleY(1.1);
     }
