@@ -17,11 +17,15 @@ const Home = () => {
             <Separator space={60} />
             <Main/>
             <Separator space={60} />
+            <Separator space={60} />
+            <Separator space={60} />
             <Facilities/>
+            <Separator space={60} />
             <Separator space={60} />
             <Room_card/>
             <Separator space={60} />
             <Reviews/>
+            <Separator space={60} />
             <Contact/>
         </div>
     );

@@ -9,6 +9,9 @@ const GlobalStyle = createGlobalStyle`
 html, body {
     overflow-x: hidden;
 }
+a {
+    text-decoration: none;
+  }
 `;
 
 export default GlobalStyle;
