@@ -1,0 +1,35 @@
+.gallery-container_reviews{
+    display: flex;
+    flex-wrap: wrap;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+}
+
+.gallery-item_reviews {
+    position: relative;
+    /* Make the container position relative */
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+
+}
+
+.overlay_reviews {
+
+    position: absolute;
+    top: 89.7%;
+    left: 0;
+    background-color: rgb(252, 252, 252);
+    /* You can adjust the color and opacity as needed */
+    color: #fdfafa;
+    /* Text color for the overlay */
+    padding: 10px;
+    /* Add padding or other styling for the content */
+    width: 100%;
+    height: 10.3%;
+    z-index: 999999;
+
+}
