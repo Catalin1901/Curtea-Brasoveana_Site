@@ -6,8 +6,9 @@
     width: 100vw;
 }
 
+
 .map-container{
-    height: 30vh;
+    height: 20vw;
     width: 40vw;
     margin-left: 5vw;
     border-radius: 10px;
@@ -32,7 +33,7 @@
 }
 
 .text{
-    font-size: 1.3vw;
+    font-size: 1vw;
     font-weight: 400;
     text-align: center;
     margin-bottom: 2%;

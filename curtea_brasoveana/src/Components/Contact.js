@@ -22,14 +22,21 @@ function Contact() {
     return (
         <div className="contact-container">
             <div className="Date de contact">
+                <div className='contact_col1'>
                 <p className="title">Date de contact</p>
                 <p className="text">Adresa: Strada Republicii nr. 56, Brașov 500030</p>
+                </div>
+                <div className='contact_col'>
                 <p className="text"><FontAwesomeIcon icon={faPhone} /></p>
                 <p className="text">Telefon: <a href={"tel:" + phonenumber}>+4 026 847 2336</a></p>
                 <p className="text">Mobil: <a href={"tel:" + mobilephone}>+4 0735 472 336</a></p>
+                </div>
+                <div className='contact_col'>
+
                 <p className="text"><FontAwesomeIcon icon={faEnvelope} /></p>
                 <p className="text">Email us at <a href={"mailto:" + email1}>office@curteabrasoveana.ro</a></p>
                 <p className="text">Email us at <a href={"mailto:" + email2}>curteabrasoveana@gmail.com   </a></p>
+                </div>
 
             </div>
             <div className="location">
