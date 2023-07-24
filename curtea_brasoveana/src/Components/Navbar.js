@@ -7,7 +7,7 @@ import {FaBars} from 'react-icons/fa'
 import  { useState, useEffect } from 'react';
 
 const Nav = styled.nav`
-  height: 60px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
@@ -28,13 +28,14 @@ const NavLink = css`
   display: flex;
   align-items: center;
   padding: 2rem;
-  margin-right: 1.5rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
   font-size: 1.5rem;
-  position: relative; /* Make sure to set position to relative */
-
+  position: relative; 
+  
   @media (min-width: 768px) {
   /* Add the :before pseudo-element styles */
   &:before {
@@ -44,7 +45,8 @@ const NavLink = css`
     height: 3px;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 3px;
+
     background: #cd853f;;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
@@ -65,8 +67,9 @@ const NavLink = css`
   &:active:before {
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
-    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust the cubic-bezier values */
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust the cubic-bezier values */
+   
 
   }
 }
@@ -162,7 +165,7 @@ function Navbar({ toggle }) {
           ))}
         </NavMenu>
         <NavButton>
-          <Button to="/about" primary='true'>Book now</Button>
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Book now</Button>
         </NavButton>
       </NavWithTransition>
     </>

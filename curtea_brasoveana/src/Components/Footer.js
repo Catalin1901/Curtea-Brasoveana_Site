@@ -1,5 +1,3 @@
-
-
 import '../styles/footer.css';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
