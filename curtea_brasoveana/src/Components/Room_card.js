@@ -5,6 +5,10 @@ import Camera_tripla from '../assets/Camera_tripla.jpg';
 import Camera_qvadrupla from '../assets/Camera_qvadrupla.jpg';
 import Suite from '../assets/Suite.jpg';
 import '../styles/room_cards.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEuroSign, faUser } from '@fortawesome/free-solid-svg-icons';
+
+
 
 function GroupExample() {
     const linkStyle = {
@@ -30,7 +34,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+          <small className="text-muted">78/90<FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">1,2<FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
@@ -41,11 +46,12 @@ function GroupExample() {
         <Card.Body>
           <Card.Title>Camera Tripla</Card.Title>
           <Card.Text>
-            Camera tripla unde se pot caza 1, 2 sau 3 persoane.
+            Camera tripla unde se pot caza 2 sau 3 persoane.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+        <small className="text-muted">100/110<FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">2,3<FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
@@ -62,7 +68,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+        <small className="text-muted">110/120/130<FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">2,3,4<FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>
@@ -76,7 +83,8 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Last updated 3 mins ago</small>
+        <small className="text-muted">110/120/130<FontAwesomeIcon icon={faEuroSign} /></small>
+          <small className="text-muted">2,3,4<FontAwesomeIcon icon={faUser} /></small>
         </Card.Footer>
         </a>
       </Card>

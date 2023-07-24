@@ -11913,6 +11913,16 @@ textarea.form-control-lg {
   font-size: 3vw;
 }
 
+.card-footer {
+  text-align: center;
+  font-size: 1.5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  align-self: center;
+  margin-left: 25%;
+}
+
 @media (max-width: 800px) {
   .card-group {
     width: 100vw;
