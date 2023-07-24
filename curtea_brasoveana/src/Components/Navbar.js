@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 import { MenuData } from '../data/MenuData.js'
 import { Button } from './Button.js';
 import {FaBars} from 'react-icons/fa'
+import  { useState, useEffect } from 'react';
 
 const Nav = styled.nav`
   height: 60px;
@@ -13,6 +14,13 @@ const Nav = styled.nav`
   z-index: 100;
   position: fixed;
   width: 100%;
+  background: ${props => (props.transparent ? 'transparent' : '#cd853f')};
+  @media (max-width: 769px) {
+    background: none;
+  }
+`;
+const Navbg = styled.nav`
+  background: red;
 `;
 const NavLink = css`
   color: #fff;
@@ -67,10 +75,29 @@ margin-right: 1.5rem;
     display: none;
 }
 `;
-function Navbar({toggle}) {
+//trebuie sa transmit toggle pentru a folosi dropwdown-ul
+function Navbar({ toggle }) {
+  const [colorChange, setColorChange] = useState(false);
+
+  const handleChangeColor = () => {
+    if (window.scrollY >= 80) {
+      setColorChange(true);
+    } else {
+      setColorChange(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleChangeColor);
+    return () => {
+      window.removeEventListener('scroll', handleChangeColor);
+    };
+  }, []);
   return (
-    <Nav>
+    <>
+    <Nav transparent={!colorChange}>
       <Logo to="/">Curtea Brasoveana Logo</Logo>
+      {/* Dropdownul Efectiv; click face referinta la hamburger-bars */}
       <MenuBars onClick={toggle}/>
       <NavMenu>
         {MenuData.map((item,index) => (
@@ -83,7 +110,11 @@ function Navbar({toggle}) {
         <Button to="/about" primary='true'>Book now</Button>
       </NavButton>
     </Nav>
-  )
+
+
+    
+   </> 
+  );
 }
 
 export default Navbar

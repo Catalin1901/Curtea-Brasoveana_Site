@@ -6,27 +6,32 @@ import {IoMdArrowRoundForward} from 'react-icons/io'
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5'
 //Book now pe mobil in centru la poza;
 const HeroSection = styled.section`
-    height: 100vh;
-    max-height: 1100px;
-    position: relative;
-    overflow: hidden;
+  height: 100vh;
+  max-height: 1100px;
+  position: relative;
+  overflow: hidden;
 `;
+
 const HeroWrapper = styled.div`
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    overflow: hidden;
-    position: relative;
-
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
 `;
+
 const HeroSlide = styled.div`
-    z-index: 1;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: ${({ visible }) => (visible ? 2 : 1)};
+  opacity: ${({ visible }) => (visible ? 1 : 0)};
+  transition: opacity 3s ease;
 `;
-
 const HeroSlider = styled.div`
     position: absolute;
     top: 0;
@@ -127,7 +132,7 @@ function Hero({ slides }) {
         const nextSlide = () => {
             setCurrent(current => (current === length - 1 ? 0 : current + 1))
         }
-        timeout.current = setTimeout(nextSlide, 3000)
+        timeout.current = setTimeout(nextSlide, 5000)
         return function () {
             if (timeout.current) {
                 clearTimeout(timeout.current)
@@ -157,7 +162,7 @@ function Hero({ slides }) {
         <HeroWrapper>
             {slides.map((slide, index) => {
                 return (
-                    <HeroSlide key={index}>
+                    <HeroSlide key={index} visible={index === current}>
                         {index === current && (
                             <HeroSlider>
                             <HeroImage src={slide.image} alt={slide.alt}/>

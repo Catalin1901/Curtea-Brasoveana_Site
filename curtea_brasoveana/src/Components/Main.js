@@ -1,5 +1,4 @@
-import hugeImage from  '../assets/Huge.png'
-import Cover from './Cover.js'
+
 const randomText = () => {
     const texts = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
