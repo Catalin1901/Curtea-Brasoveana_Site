@@ -5,7 +5,7 @@ import { faFacebookF, faSquareWhatsapp } from '@fortawesome/free-brands-svg-icon
 
 const Footer = () => {
   const whatsappLink = 'https://api.whatsapp.com/send?phone=1234567890'; // Replace with your actual WhatsApp link
-  const facebookLink = 'https://www.facebook.com/yourpage'; // Replace with your actual Facebook link
+  const facebookLink = 'https://www.facebook.com/PensiuneaCurteaBrasoveana/'; // Replace with your actual Facebook link
 
   return (
     <footer className="footer">
