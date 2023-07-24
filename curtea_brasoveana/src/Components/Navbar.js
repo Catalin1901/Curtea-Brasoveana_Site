@@ -76,6 +76,22 @@ margin-right: 1.5rem;
     display: none;
 }
 `;
+const NavWithTransition = styled.nav`
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: ${props => (props.transparent ? 'transparent' : '#cd853f')};
+  transition: background-color 0.6s ease; /* Add a smooth transition */
+
+  @media (max-width: 769px) {
+    background: none;
+  }
+`;
+
 //trebuie sa transmit toggle pentru a folosi dropwdown-ul
 function Navbar({ toggle }) {
   const [colorChange, setColorChange] = useState(false);
@@ -94,27 +110,25 @@ function Navbar({ toggle }) {
       window.removeEventListener('scroll', handleChangeColor);
     };
   }, []);
+
   return (
     <>
-    <Nav transparent={!colorChange}>
-      <Logo to="/">Curtea Brasoveana Logo</Logo>
-      {/* Dropdownul Efectiv; click face referinta la hamburger-bars */}
-      <MenuBars onClick={toggle}/>
-      <NavMenu>
-        {MenuData.map((item,index) => (
-          <NavMenuLinks to={item.link} key={index}>
-            {item.title}
-          </NavMenuLinks>
-))}
-      </NavMenu>
-      <NavButton>
-        <Button to="/about" primary='true'>Book now</Button>
-      </NavButton>
-    </Nav>
-
-
-    
-   </> 
+      {/* Replace `Nav` with `NavWithTransition` */}
+      <NavWithTransition transparent={!colorChange}>
+        <Logo to="/">Curtea Brasoveana Logo</Logo>
+        <MenuBars onClick={toggle} />
+        <NavMenu>
+          {MenuData.map((item, index) => (
+            <NavMenuLinks to={item.link} key={index}>
+              {item.title}
+            </NavMenuLinks>
+          ))}
+        </NavMenu>
+        <NavButton>
+          <Button to="/about" primary='true'>Book now</Button>
+        </NavButton>
+      </NavWithTransition>
+    </>
   );
 }
 
