@@ -10,6 +10,7 @@ const HeroSection = styled.section`
   max-height: 1100px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 10rem;
 `;
 
 const HeroWrapper = styled.div`
@@ -150,7 +151,7 @@ function Hero({ slides }) {
         setCurrent(current => (current === length - 1 ? 0 : current + 1));
       };
   
-      timeout.current = setTimeout(nextSlide, 4000); // Adjust the timeout duration
+      timeout.current = setTimeout(nextSlide, 5000); // Adjust the timeout duration
   
       return function () {
         if (timeout.current) {
