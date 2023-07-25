@@ -1,7 +1,19 @@
-import '../styles/main.css'
-function Main(){
-    return(
-      <div class="main">
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+
+import '../styles/main.css';
+
+function Main() {
+  return (
+    <div className="main">
+      <h1 className="text-center">Curtea Brasoveana</h1>
+      <div className="d-flex justify-content-center">
+        <FontAwesomeIcon icon={faStar} className="star-icon" size='2x' />
+        <FontAwesomeIcon icon={faStar} className="star-icon" size='2x'/>
+        <FontAwesomeIcon icon={faStar} className="star-icon" size='2x'/>
+        <FontAwesomeIcon icon={faStar} className="star-icon" size='2x'/>
+      </div>
       <div class="row justify-content-center">
 
         <div class="col-12 col-sm-4 d-flex flex-column main-custom">

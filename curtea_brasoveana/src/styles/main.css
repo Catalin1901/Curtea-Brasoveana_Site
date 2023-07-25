@@ -8,3 +8,24 @@
      0.5px 0.5px 0 black;
     }
 }
+
+.star-icon {
+    margin: 0 5px;
+    color: goldenrod;
+    padding-bottom: 5%;
+    size: 3x;
+  }
+  
+.main{
+    text-align: center;
+  }
+
+  .main h1{
+    font-family: 'Oswald', sans-serif; /* Use the imported font */
+    font-size: 48px; /* Increase the font size */
+    font-weight: bold; /* Make the font bold */
+    letter-spacing: 4px; /* Add some letter spacing for exaggerated effect */
+    text-transform: uppercase; /* Uppercase the text for additional emphasis */
+    color: #990000; /* Choose your desired color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle text shadow */
+  }
