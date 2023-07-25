@@ -1,8 +1,10 @@
 .main-custom{
+    @media (min-width: 800px) {
     font-size: 1.3vw;
     text-shadow: 
     -0.5px -0.5px 0 black,
      0.5px -0.5px 0 black,
     -0.5px 0.5px 0 black,
      0.5px 0.5px 0 black;
+    }
 }

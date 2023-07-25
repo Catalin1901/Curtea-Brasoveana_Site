@@ -65,6 +65,7 @@ transition: 0.2s ease-in-out;
 const NavButton = styled.div`
 display: flex;
 justify-content: center;
+rounded: true;
 `;
 
 function Dropdown({isOpen, toggle}) {
@@ -81,7 +82,8 @@ function Dropdown({isOpen, toggle}) {
                     </DropdownLink>
 ))} 
             <NavButton>
-                <Button primary='true' round='true' big='true' to='/contact'>Contact Us</Button>
+   
+            <Button primary='true' round='true' big='false' to='/https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html'>Book now</Button>
             </NavButton>
             </DropdownMenu>
         </DropdownWrapper>
