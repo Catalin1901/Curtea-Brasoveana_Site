@@ -24,7 +24,7 @@ const Home = () => {
             <Separator space={60} />
             <Room_card/>
             <Separator space={60} />
-            <Reviews/>
+            {/*<Reviews/>*/}
             <Separator space={60} />
             <Contact/>
         </div>

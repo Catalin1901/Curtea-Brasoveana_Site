@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import { SliderData } from '../data/SliderData';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
-
+import { Button } from '../Components/Button';
 
 const HeroSection = styled.section`
   height: 100vh;
@@ -78,6 +78,7 @@ const HeroImage = styled.img`
 `;
 
 const HeroContent = styled.div`
+@media (min-width: 800px) {
   position: relative;
   margin-top: 25rem;
   z-index: 10;
@@ -105,13 +106,17 @@ const HeroContent = styled.div`
     margin-bottom: 1.2rem;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   }
+}
 `;
 
 const Arrow = styled(IoMdArrowRoundForward)`
+@media (min-width: 800px) {
   margin-left: 0.5rem;
+}
 `;
 
 const arrowButtons = css`
+@media (min-width: 800px) {
   width: 50px;
   height: 50px;
   color: #fff;
@@ -127,6 +132,7 @@ const arrowButtons = css`
     background: #cd853f;
     transform: scale(1.05);
   }
+}
 `;
 
 const PrevArrow = styled(IoArrowBack)`
@@ -143,9 +149,7 @@ const SliderButtons = styled.div`
   right: 50px;
   display: flex;
   z-index: 10;
-  @media (max-width: 768px) {
-    display: none;
-  }
+  @media (max-width: 800px) { display: none; }
 `;
 
 function Hero({ slides }) {
@@ -200,7 +204,7 @@ function Hero({ slides }) {
   };
 
   const handleTouchEnd = () => {
-    const swipeThreshold = 50; //sensibilitate touch
+    const swipeThreshold = 30; //sensibilitate touch
     if (touchStartX.current - touchEndX.current > swipeThreshold) { //daca miscarea e mai mare decat sensibilitatea
       nextSlide();
     } else if (touchEndX.current - touchStartX.current > swipeThreshold) {
@@ -227,10 +231,10 @@ function Hero({ slides }) {
                   <HeroContent>
                     <h1>{slide.title}</h1>
                     <p>{slide.price}</p>
-                    {/* <Button to={slide.path} primary="true" css={`max-width: 100px;`}>
+                    { <Button to={slide.path} primary="true" css={`@media (min-width: 800px) {max-width: 100px;}`}>
                       {slide.label}
                       <Arrow />
-                    </Button> */}
+                    </Button> }
                   </HeroContent>
                 </HeroSlider>
               )}

@@ -16,7 +16,7 @@ const Nav = styled.nav`
   width: 100%;
   background: ${props => (props.transparent ? 'transparent' : '#cd853f')};
   transition: 0.5s ease;
-  @media (max-width: 769px) {
+  @media (max-width: 800px) {
     background: none;
   }
 `;
@@ -40,7 +40,7 @@ const NavLink = css`
    0.5px -0.5px 0 black,
   -0.5px 0.5px 0 black,
    0.5px 0.5px 0 black;
-  @media (min-width: 768px) {
+  @media (min-width: 800px) {
   /* Add the :before pseudo-element styles */
   &:before {
     content: "";
@@ -85,7 +85,7 @@ const Logo = styled(Link)`
 
 const MenuBars = styled(FaBars)`
 display: none;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: block;
     height: 40px;
     width: 40px;

@@ -30,14 +30,17 @@ font-size: 2rem;
 
 `;
 const CloseIcon = styled(FaTimes)`
-color: #000d1a;
+color: #fff;
 `;
-const DropdownWrapper = styled.div``;
+const DropdownWrapper = styled.div`
+
+`;
 const DropdownMenu = styled.div`
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(4, 80px);
 text-align: center;
+background-color: #cd853f;
 text-shadow: 
 -0.5px -0.5px 0 black,
  0.5px -0.5px 0 black,
@@ -47,6 +50,7 @@ margin-bottom: 4rem;
 @media screen and (max-width: 480px) {
     grid-template-rows: repeat(4, 60px);
 }
+
 `;
 const DropdownLink = styled(Link)`
 display: flex;
@@ -61,16 +65,18 @@ transition: 0.2s ease-in-out;
 &:hover {
     color: #000d1a;
 }
+
 `;
 const NavButton = styled.div`
 display: flex;
 justify-content: center;
 rounded: true;
+
 `;
 
 function Dropdown({isOpen, toggle}) {
   return (
-    <DropdownContainer isOpen={isOpen} onClick={toggle}>
+    <DropdownContainer isOpen={isOpen} onClick={toggle} >
         <Icon onClick={toggle}>
             <CloseIcon />
         </Icon>

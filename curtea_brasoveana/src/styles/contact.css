@@ -1,3 +1,4 @@
+/* Styles for .contact-container */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -6,8 +7,8 @@
     width: 100vw;
 }
 
-
-.map-container{
+/* Styles for .map-container */
+.map-container {
     height: 20vw;
     width: 40vw;
     margin-left: 5vw;
@@ -15,16 +16,17 @@
     text-align: center;
 }
 
-.map{
+/* Styles for .map */
+.map {
     height: 95%;
     width: 90%;
     align-self: center;
     border-radius: 2vh;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
-
 }
 
-.title{
+/* Styles for .title */
+.title {
     font-size: 2.3vw;
     font-weight: 400;
     text-align: center;
@@ -32,40 +34,49 @@
     color: #fff;
 }
 
-.text{
+/* Styles for .text */
+.text {
     font-size: 1vw;
     font-weight: 400;
     text-align: center;
     margin-bottom: 2%;
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
+    /* Text shadow with vendor prefixes */
     text-shadow: 
-    -0.5px -0.5px 0 black,
-     0.5px -0.5px 0 black,
-    -0.5px 0.5px 0 black,
-     0.5px 0.5px 0 black;
-
+        -0.5px -0.5px 0 black,
+         0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+         0.5px 0.5px 0 black;
 }
 
-.location{
-    width:100%;
+/* Styles for .location */
+.location {
+    width: 100%;
     height: 100%;
     align-self: center;
 }
 
+/* Media query for screens with a maximum width of 800px */
 @media (max-width: 800px) {
     .contact-container {
+        /* Flexbox fallback for older browsers */
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background-color: #735C46;
         height: auto;
         width: auto;
         margin-bottom: 0;
-        flex-direction: column;    
+        /* Flex direction fallback */
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
         align-items: center;
-
     }
 
-    .map-container{
+    .map-container {
         height: auto;
         width: 70%;
         border-radius: 10px;
@@ -74,7 +85,7 @@
         margin-left: 15%;
     }
 
-    .text{
+    .text {
         font-size: 2vw;
         font-weight: 300;
         text-align: center;
