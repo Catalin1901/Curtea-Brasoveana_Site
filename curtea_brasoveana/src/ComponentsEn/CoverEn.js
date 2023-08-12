@@ -2,10 +2,9 @@ import React from 'react';
 import High from '../assets/Front.jpeg';
 import Low from '../assets/Low.jpg';
 import '../styles/cover.css';
-import Button from 'react-bootstrap/Button';
 
 
-const Cover = () => {
+const CoverEn = () => {
   const screenWidth = window.innerWidth;
   const imageStyle = {
     backgroundImage: `url(${screenWidth > 768 ? High : Low})`,
@@ -35,4 +34,4 @@ const Cover = () => {
   );
 };
 
-export default Cover;
+export default CoverEn;

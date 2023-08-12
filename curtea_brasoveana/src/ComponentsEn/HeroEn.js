@@ -164,7 +164,7 @@ const SliderButtons = styled.div`
   @media (max-width: 800px) { display: none; }
 `;
 
-function Hero({ slides }) {
+function HeroEn({ slides }) {
   const [current, setCurrent] = useState(0); 
   const length = slides.length;
   const timeout = useRef(null);
@@ -184,7 +184,7 @@ function Hero({ slides }) {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
     };
 
-    timeout.current = setTimeout(nextSlide, 50000); // Adjust the timeout duration
+    timeout.current = setTimeout(nextSlide, 5000); // Adjust the timeout duration
 
     return function () { //functie pentru cleanup
       if (timeout.current) {
@@ -261,4 +261,4 @@ function Hero({ slides }) {
   );
 }
 
-export default Hero;
+export default HeroEn;

@@ -6,7 +6,7 @@ export const SliderData = [
         title: 'O experienta de neuitat',
         price: 'Pentru ca meriti',
         path: '/home',
-        label: 'View Home',
+        label: 'Book now',
         image: ImageOne,
         alt: 'House'
     },
@@ -15,7 +15,7 @@ export const SliderData = [
         title: 'Inima Brasovului',
         price: 'Oaza ta de liniste',
         path: '/home',
-        label: 'View Home',
+        label: 'Book now',
         image: ImageTwo,
         alt: 'House'
     },
@@ -23,7 +23,7 @@ export const SliderData = [
         title: 'Imagine de seara',
         price: 'SuperCute',
         path: '/home',
-        label: 'View Home',
+        label: 'Book now',
         image: ImageThree,
         alt: 'House'
     }
