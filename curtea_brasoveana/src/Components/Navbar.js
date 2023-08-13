@@ -7,7 +7,7 @@ import {FaBars} from 'react-icons/fa'
 import  { useState, useEffect } from 'react';
 import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
-
+import Logo1 from '../assets/Logo.svg'
 
 
 const Nav = styled.nav`
@@ -82,14 +82,7 @@ const NavLink = css`
   }
 }
 `;
-const Logo = styled(Link)`
-${NavLink}
-margin-left: 0;
-margin-right: 0;
-margin-bottom: 16px;
-margin-top: -16px;
-font-style: italic;
-`;
+
 
 const MenuBars = styled(FaBars)`
 display: none;
@@ -165,7 +158,7 @@ function Navbar({ toggle }) {
     <>
 
       <NavWithTransition transparent={!colorChange}>
-        <Logo to="/">Logo</Logo>
+      <img src={Logo1} alt="Romania Flag" style={{ height:'50px', paddingBottom: '10px'}}  />
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuData.map((item, index) => (

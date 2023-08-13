@@ -17,9 +17,13 @@ const Button2 = styled(Button)`
 
 @media (min-width: 800px) {
  display: none;
+
+
 }
 @media (max-width: 800px) {
   display: flex;
+  z-index: 100;
+  position: relative;
 }
 `;
 

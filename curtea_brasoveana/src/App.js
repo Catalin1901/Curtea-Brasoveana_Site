@@ -29,7 +29,7 @@ function App() {
     <Router>
     <div className="App">
       <GlobalStyle/>
-
+    {/*Nu ne place uselocals aparent*/}
       <WhatsAppLogo />
       <div className="content">
       <Routes>
