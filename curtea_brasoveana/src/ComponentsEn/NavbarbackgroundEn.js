@@ -9,6 +9,23 @@ import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
 
 
+const Nav = styled.nav`
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: #cd853f
+  transition: 0.5s ease;
+  @media (max-width: 800px) {
+    background: none;
+  }
+`;
+const Navbg = styled.nav`
+  background: red;
+`;
 const NavLink = css`
   color: #fff;
   display: flex;
@@ -92,7 +109,7 @@ const NavMenu = styled.div`
 display: flex;
 align-items: center;
 margin-right: -2rem;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -106,7 +123,7 @@ const NavButton = styled.div`
 display: flex;
 align-items: center;
 margin-right: 1.5rem;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -125,29 +142,14 @@ const NavWithTransition = styled.nav`
 `;
 
 //trebuie sa transmit toggle pentru a folosi dropwdown-ul
-function NavbarEn({ toggle }) {
-  const [colorChange, setColorChange] = useState(false);
+function NavbarbackgroundEn({ toggle }) {
 
-  const handleChangeColor = () => {
-    if (window.scrollY >= 80) {
-      setColorChange(true);
-    } else {
-      setColorChange(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleChangeColor);
-    return () => {
-      window.removeEventListener('scroll', handleChangeColor);
-    };
-  }, []);
 
   return (
     <>
 
-      <NavWithTransition transparent={!colorChange}>
-        <Logo to="/">Logo</Logo>
+      <NavWithTransition >
+      <Logo to="/">Logo</Logo>
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuDataEn.map((item, index) => (
@@ -168,4 +170,4 @@ function NavbarEn({ toggle }) {
 }
 
 
-export default NavbarEn;
+export default NavbarbackgroundEn;

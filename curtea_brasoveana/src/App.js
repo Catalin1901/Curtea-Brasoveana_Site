@@ -1,7 +1,6 @@
-import './styles/app.css';
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './Components/Navbar.js';
+
 import Footer from './Components/Footer.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 //Romana
@@ -12,9 +11,11 @@ import Rooms from './pages/Rooms.js';
 import HomeEn from './pages/HomeEn.js';
 import RoomsEn from './pages/RoomsEn.js';
 import GalleryEn from './pages/GalleryEn.js';
+import NavbarEn from './ComponentsEn/NavbarEn.js';
 //Componente
 import GlobalStyle from './globalStyle';
 import Dropdown from './Components/Dropdown.js';
+import Navbar from './Components/Navbar.js';
 import WhatsAppLogo from './Components/Whatsapp.js';
 //Routes to the other pages
 function App() {
@@ -28,8 +29,7 @@ function App() {
     <Router>
     <div className="App">
       <GlobalStyle/>
-      <Navbar toggle={toggle}/> 
-      <Dropdown isOpen={isOpen} toggle={toggle}/>
+
       <WhatsAppLogo />
       <div className="content">
       <Routes>

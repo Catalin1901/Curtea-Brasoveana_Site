@@ -1,10 +1,11 @@
 import React from 'react'
 import styled , {css} from 'styled-components'
-import { Button } from './Button.js';
+import { Button } from './ButtonEn.js';
 import {FaTimes} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import { MenuData } from '../data/MenuData.js';
-
+import RoIcon from '../assets/Ro.svg'
+import EnIcon from '../assets/En.svg'
 const DropdownContainer = styled.div`
 position: fixed;
 z-index: 999;
@@ -74,7 +75,7 @@ rounded: true;
 
 `;
 
-function Dropdown({isOpen, toggle}) {
+function DropdownEn({isOpen, toggle}) {
   return (
     <DropdownContainer isOpen={isOpen} onClick={toggle} >
         <Icon onClick={toggle}>
@@ -88,13 +89,15 @@ function Dropdown({isOpen, toggle}) {
                     </DropdownLink>
 ))} 
             <NavButton>
-   
-            <Button primary='true' round='true' big='false' to='/https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html'>Book now</Button>
+          <Button primary='true' round='true' big='false' to='/https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html'>Book now</Button>
             </NavButton>
+            <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto'}} /> </a>
+            <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="Uk Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto'}} /> </a>
+  
             </DropdownMenu>
         </DropdownWrapper>
     </DropdownContainer>  
     )
 }
 
-export default Dropdown;   
+export default DropdownEn;   

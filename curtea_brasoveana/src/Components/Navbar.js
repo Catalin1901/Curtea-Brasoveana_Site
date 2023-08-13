@@ -5,12 +5,16 @@ import { MenuData } from '../data/MenuData.js'
 import { Button } from './Button.js';
 import {FaBars} from 'react-icons/fa'
 import  { useState, useEffect } from 'react';
+import RoIcon from '../assets/Ro.svg'
+import EnIcon from '../assets/En.svg'
+
+
 
 const Nav = styled.nav`
   height: 65px;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.2rem;
   z-index: 100;
   position: fixed;
   width: 100%;
@@ -106,7 +110,7 @@ const NavMenu = styled.div`
 display: flex;
 align-items: center;
 margin-right: -2rem;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -120,7 +124,7 @@ const NavButton = styled.div`
 display: flex;
 align-items: center;
 margin-right: 1.5rem;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -159,7 +163,7 @@ function Navbar({ toggle }) {
 
   return (
     <>
-      {/* Replace `Nav` with `NavWithTransition` */}
+
       <NavWithTransition transparent={!colorChange}>
         <Logo to="/">Logo</Logo>
         <MenuBars onClick={toggle} />
@@ -169,13 +173,16 @@ function Navbar({ toggle }) {
               {item.title}
             </NavMenuLinks>
           ))}
+           <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{ width: '40px', height: 'auto', marginLeft: '20px' }}  /> </a>
+           <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="English Flag" style={{ width: '40px', height: 'auto', marginLeft: '20px' }}  /> </a>
+
         </NavMenu>
         <NavButton>
-          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Book now</Button>
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
         </NavButton>
       </NavWithTransition>
     </>
   );
 }
 
-export default Navbar
+export default Navbar;

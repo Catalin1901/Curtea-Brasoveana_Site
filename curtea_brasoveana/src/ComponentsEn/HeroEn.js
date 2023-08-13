@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled, { css } from 'styled-components';
-import { SliderData } from '../data/SliderData';
+import { SliderDataEn } from '../data/SliderDataEn';
 import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 import { Button } from '../Components/Button';

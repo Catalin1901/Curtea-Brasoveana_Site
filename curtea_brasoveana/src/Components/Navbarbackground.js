@@ -1,14 +1,32 @@
 import React from 'react'
 import styled , {css} from 'styled-components'
 import {Link} from 'react-router-dom'
-import { MenuDataEn } from '../data/MenuDataEn.js'
-import { Button } from './ButtonEn.js';
+import { MenuData } from '../data/MenuData.js'
+import { Button } from './Button.js';
 import {FaBars} from 'react-icons/fa'
 import  { useState, useEffect } from 'react';
 import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
 
 
+
+const Nav = styled.nav`
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: #cd853f
+  transition: 0.5s ease;
+  @media (max-width: 800px) {
+    background: none;
+  }
+`;
+const Navbg = styled.nav`
+  background: red;
+`;
 const NavLink = css`
   color: #fff;
   display: flex;
@@ -92,7 +110,7 @@ const NavMenu = styled.div`
 display: flex;
 align-items: center;
 margin-right: -2rem;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -106,7 +124,7 @@ const NavButton = styled.div`
 display: flex;
 align-items: center;
 margin-right: 1.5rem;
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -125,32 +143,18 @@ const NavWithTransition = styled.nav`
 `;
 
 //trebuie sa transmit toggle pentru a folosi dropwdown-ul
-function NavbarEn({ toggle }) {
-  const [colorChange, setColorChange] = useState(false);
+function Navbarbackground({ toggle }) {
 
-  const handleChangeColor = () => {
-    if (window.scrollY >= 80) {
-      setColorChange(true);
-    } else {
-      setColorChange(false);
-    }
-  };
 
-  useEffect(() => {
-    window.addEventListener('scroll', handleChangeColor);
-    return () => {
-      window.removeEventListener('scroll', handleChangeColor);
-    };
-  }, []);
 
   return (
     <>
 
-      <NavWithTransition transparent={!colorChange}>
+      <NavWithTransition >
         <Logo to="/">Logo</Logo>
         <MenuBars onClick={toggle} />
         <NavMenu>
-          {MenuDataEn.map((item, index) => (
+          {MenuData.map((item, index) => (
             <NavMenuLinks to={item.link} key={index}>
               {item.title}
             </NavMenuLinks>
@@ -160,12 +164,11 @@ function NavbarEn({ toggle }) {
 
         </NavMenu>
         <NavButton>
-          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Book us</Button>
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
         </NavButton>
       </NavWithTransition>
     </>
   );
 }
 
-
-export default NavbarEn;
+export default Navbarbackground;
