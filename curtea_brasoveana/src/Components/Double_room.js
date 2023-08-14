@@ -1,32 +1,43 @@
-import Carousel from 'react-bootstrap/Carousel';
-import camera_dubla from '../assets/Camera_dubla.jpg';
-import { Image } from 'react-bootstrap';
-import '../styles/double_room.css'
+import React, { Component } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import camera from '../assets/Camera_dubla.jpg';
+import Image from 'react-bootstrap/Image';
 
-
-function UncontrolledExample() {
-  return (
-    <Carousel>
-      <Carousel.Item>
-        <Image src={camera_dubla} text="First slide" />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image src={camera_dubla} text="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image src={camera_dubla} text="Third slide" />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-  );
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <div>
+        <h2> Single Item</h2>
+        <Slider {...settings}>
+          <div>
+            <Image src = {camera}/>
+          </div>
+          <div>
+            <h3>2</h3>
+          </div>
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div>
+        </Slider>
+      </div>
+    );
+  }
 }
-
-export default UncontrolledExample;

@@ -1,32 +1,32 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Image } from 'react-bootstrap';
-import FirstSlideImage from '../assets/Front.jpeg';
-import SecondSlideImage from '../assets/Front2.jpeg';
-import ThirdSlideImage from '../assets/Front3.jpeg';
-import '../styles/carousel.css';
-//From React-Bootstrap: 
+import camera1 from '../assets/Camera_dubla.jpg';
+import camera2 from '../assets/Suite.jpg';
+import camera3 from '../assets/Camera_tripla.jpg';
+import '../styles/room_cards.css';
+
+
 function CardWithCarousel() {
   return (
-    <div className="card" style={{ width: '400px', height: '400px' }}>
-        <h5 class="card-title">Card title</h5>
+    <div className="carousel-container">
       <Carousel fade>
         <Carousel.Item>
-          <Image src={FirstSlideImage} alt="First slide" className="carousel-image" />
+          <Image src={camera1} alt="First slide" className="carousel-image" />
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image src={SecondSlideImage} alt="Second slide" className="carousel-image" />
+          <Image src={camera2} alt="Second slide" className="carousel-image" />
           <Carousel.Caption>
             <h3>Second slide label</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <Image src={ThirdSlideImage} alt="Third slide" className="carousel-image" />
+          <Image src={camera3} alt="Third slide" className="carousel-image" />
           <Carousel.Caption>
             <h3>Third slide label</h3>
             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>

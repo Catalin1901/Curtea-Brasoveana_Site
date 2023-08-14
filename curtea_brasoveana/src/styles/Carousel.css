@@ -2,7 +2,6 @@
     width: 100%;
     height: auto; 
   }
-  
   /* Optional: Hide the default carousel indicators (dots) if desired */
   .carousel-indicators {
     display: none;

@@ -46,11 +46,11 @@
   text-align: center;
   font-weight: 600;
   font-family: 'Times New Roman', Times, serif;
-  text-shadow: 
-  -0.5px -0.5px 0 black,
-   0.5px -0.5px 0 black,
-  -0.5px 0.5px 0 black,
-   0.5px 0.5px 0 black;
+  // text-shadow: 
+  // -0.5px -0.5px 0 black,
+  //  0.5px -0.5px 0 black,
+  // -0.5px 0.5px 0 black,
+  //  0.5px 0.5px 0 black;
 
 }
 
@@ -60,11 +60,11 @@
   text-align: center;
   font-weight: 100;
   font-family: 'Times New Roman', Times, serif;
-  text-shadow: 
-  -0.5px -0.5px 0 black,
-   0.5px -0.5px 0 black,
-  -0.5px 0.5px 0 black,
-   0.5px 0.5px 0 black;
+  // text-shadow: 
+  // -0.5px -0.5px 0 black,
+  //  0.5px -0.5px 0 black,
+  // -0.5px 0.5px 0 black,
+  //  0.5px 0.5px 0 black;
 
 }
 
@@ -135,4 +135,30 @@
     align-self: center;
     margin-left: 10%;
   }
+}
+
+.carousel-container{
+  position: relative;
+  width: 50vw;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+
+.carousel-item{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+}
+
+.carousel-image{
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-self: center;
+  border-radius: 2vw;
+  box-shadow:  8px 8px 8px rgba(0, 0, 0, 0.2);
 }
