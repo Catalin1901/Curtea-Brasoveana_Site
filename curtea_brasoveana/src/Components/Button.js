@@ -21,7 +21,7 @@ text-shadow:
 align-items: center;
 padding: ${({big}) => (big ? '1vh 2vh' : '0.8vh 1.6vh')};
 color: ${({primary}) => (primary ? '#fff' : '#000d1a')};
-font-size: ${({big}) => (big ? '24px' : '12px')};
+font-size: ${({big}) => (big ? '30px' : '18px')};
 margin-left: 20px;
 &:hover {
     transform: translateY(-5px);
