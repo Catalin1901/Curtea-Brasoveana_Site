@@ -12,11 +12,13 @@ import HomeEn from './pages/HomeEn.js';
 import RoomsEn from './pages/RoomsEn.js';
 import GalleryEn from './pages/GalleryEn.js';
 import NavbarEn from './ComponentsEn/NavbarEn.js';
+import ContactEn from './ComponentsEn/ContactEn.js';
 //Componente
 import GlobalStyle from './globalStyle';
 import Dropdown from './Components/Dropdown.js';
 import Navbar from './Components/Navbar.js';
 import WhatsAppLogo from './Components/Whatsapp.js';
+import Contact from './Components/Contact.js';
 //Routes to the other pages
 function App() {
   const Title = 'Curtea Brasoveana';

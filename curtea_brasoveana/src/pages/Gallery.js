@@ -4,6 +4,7 @@ import Gallery_component from '../Components/Gallery_component';
 import Dropdown from '../Components/Dropdown.js';
 import Navbarbackground from '../Components/Navbarbackground.js';
 import React, { useState } from 'react';
+import Contact from '../Components/Contact.js';
 const Separator = styled.div`
   height: ${(props) => props.space}px; /* Set the desired space using the 'space' prop */
 `;
@@ -45,6 +46,7 @@ const Gallery = () => {
     <Separator space={100} />
     <Separator space={100} />
     <Separator space={100} />
+    <Contact/>
 
   </div>
             

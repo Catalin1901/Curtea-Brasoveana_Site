@@ -5,6 +5,7 @@ import Gallery_componentEn from '../ComponentsEn/Gallery_componentEn';
 import DropdownEn from '../ComponentsEn/DropdownEn.js';
 import NavbarbackgroundEn from '../ComponentsEn/NavbarbackgroundEn.js';
 import React, { useState } from 'react';
+import ContactEn from '../ComponentsEn/ContactEn.js';
 const Separator = styled.div`
   height: ${(props) => props.space}px; /* Set the desired space using the 'space' prop */
 `;
@@ -38,6 +39,7 @@ const GalleryEn = () => {
     <Gallery_componentEn galleryImages={galleryImages}/>
     <Separator space={100} />
     <Separator space={100} />
+    <ContactEn/>
 
   </div>
             
