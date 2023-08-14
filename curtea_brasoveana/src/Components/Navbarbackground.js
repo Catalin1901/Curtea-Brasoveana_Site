@@ -14,7 +14,7 @@ const Nav = styled.nav`
   height: 65px;
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 1.2rem;
+  padding: 0.6rem 0.8rem;
   z-index: 100;
   position: fixed;
   width: 100%;
@@ -24,28 +24,28 @@ const Nav = styled.nav`
     background: none;
   }
 `;
-const Navbg = styled.nav`
-  background: red;
-`;
+
 const NavLink = css`
+  padding-right: 2vw;
+  padding-left: 4vw;
+  margin-right: 0.5vw;
+  margin-left: 4vw;
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 2rem;
-  margin-right: 3rem;
-  margin-left: 3rem;
+  justify-content: center;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 28px;
   position: relative; 
+  padding-left: 1vw;
   text-shadow: 
   -0.5px -0.5px 0 black,
    0.5px -0.5px 0 black,
   -0.5px 0.5px 0 black,
    0.5px 0.5px 0 black;
   @media (min-width: 800px) {
-  /* Add the :before pseudo-element styles */
   &:before {
     content: "";
     position: absolute;
@@ -82,14 +82,7 @@ const NavLink = css`
   }
 }
 `;
-const Logo = styled(Link)`
-${NavLink}
-margin-left: 0;
-margin-right: 0;
-margin-bottom: 16px;
-margin-top: -16px;
-font-style: italic;
-`;
+
 
 const MenuBars = styled(FaBars)`
 display: none;
@@ -109,7 +102,9 @@ display: none;
 const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right: -2rem;
+
+padding-right: -10px;
+
 @media screen and (max-width: 800px) {
     display: none;
 }
@@ -122,8 +117,10 @@ ${NavLink}
 
 const NavButton = styled.div`
 display: flex;
+size:auto;
+min-width: 60px;
 align-items: center;
-margin-right: 1.5rem;
+margin-right: 1rem;
 @media screen and (max-width: 800px) {
     display: none;
 }
@@ -151,7 +148,7 @@ function Navbarbackground({ toggle }) {
     <>
 
       <NavWithTransition >
-      <img src={Logo1} alt="Romania Flag" style={{ height:'60px', width: '50px' , marginTop: '-15px'}}  />
+      <img src={Logo1} alt="Logo" style={{ height:'60px', width: '10vw' , marginTop: '-15px' }}  />
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuData.map((item, index) => (
@@ -159,11 +156,11 @@ function Navbarbackground({ toggle }) {
               {item.title}
             </NavMenuLinks>
           ))}
-           <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{ width: '40px', height: 'auto', marginLeft: '20px' }}  /> </a>
-           <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="English Flag" style={{ width: '40px', height: 'auto', marginLeft: '20px' }}  /> </a>
-
-        </NavMenu>
+      </NavMenu>
         <NavButton>
+        <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{ width: '4vh', height: 'auto',marginLeft: '0vw' }}  /> </a>
+        <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="English Flag" style={{ width: '4vh', height: 'auto', marginLeft: '0.8vw' }}  /> </a>
+  
           <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
         </NavButton>
       </NavWithTransition>

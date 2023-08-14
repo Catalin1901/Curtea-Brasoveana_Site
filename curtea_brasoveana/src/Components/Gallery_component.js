@@ -7,9 +7,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import '../styles/gallery.css';
 
-const Gallery_component = ({ galleryImages }) => {
+const GalleryComponent = ({ galleryImages }) => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [openModal, setOpenModal] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(0);
 
   const handleOpenModal = (index) => {
     setSlideNumber(index);
@@ -26,6 +27,21 @@ const Gallery_component = ({ galleryImages }) => {
 
   const nextSlide = () => {
     setSlideNumber(slideNumber + 1 === galleryImages.length ? 0 : slideNumber + 1);
+  };
+
+  const handleTouchStart = (event) => {
+    setTouchStartX(event.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (event) => {
+    const touchEndX = event.changedTouches[0].clientX;
+    const touchDistance = touchEndX - touchStartX;
+
+    if (touchDistance > 50) {
+      prevSlide();
+    } else if (touchDistance < -50) {
+      nextSlide();
+    }
   };
 
   useEffect(() => {
@@ -47,9 +63,17 @@ const Gallery_component = ({ galleryImages }) => {
   return (
     <div>
       {openModal && (
-        <div className='sliderWrap'>
+        <div
+          className='sliderWrap'
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className='sliderContent'>
-            <FontAwesomeIcon icon={faChevronLeft}  className='btnPrev' onClick={prevSlide}   />
+            <FontAwesomeIcon
+              icon={faChevronLeft}
+              className='btnPrev'
+              onClick={prevSlide}
+            />
             <div className='fullScreenImage'>
               <img src={galleryImages[slideNumber].img} alt='' />
             </div>
@@ -82,4 +106,4 @@ const Gallery_component = ({ galleryImages }) => {
   );
 };
 
-export default Gallery_component;
+export default GalleryComponent;
