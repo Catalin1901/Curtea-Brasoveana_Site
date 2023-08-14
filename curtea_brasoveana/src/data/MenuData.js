@@ -3,4 +3,6 @@ export const MenuData = [
 {title: 'Galerie', link: '/gallery'},
 {title: 'Camere ', link: '/rooms'},
 
+
+
 ]

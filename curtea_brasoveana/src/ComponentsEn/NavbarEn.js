@@ -8,26 +8,42 @@ import  { useState, useEffect } from 'react';
 import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
 import Logo1 from '../assets/Logo.svg'
+const Nav = styled.nav`
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0.8rem;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background: #cd853f
+  transition: 0.5s ease;
+  @media (max-width: 800px) {
+    background: none;
+  }
+`;
 
 const NavLink = css`
+  padding-right: 2vw;
+  padding-left: 4vw;
+  margin-right: 0.5vw;
+  margin-left: 4vw;
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 2rem;
-  margin-right: 3rem;
-  margin-left: 3rem;
+  justify-content: center;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 28px;
   position: relative; 
+  padding-left: 1vw;
   text-shadow: 
   -0.5px -0.5px 0 black,
    0.5px -0.5px 0 black,
   -0.5px 0.5px 0 black,
    0.5px 0.5px 0 black;
   @media (min-width: 800px) {
-  /* Add the :before pseudo-element styles */
   &:before {
     content: "";
     position: absolute;
@@ -35,13 +51,13 @@ const NavLink = css`
     height: 3px;
     left: 0;
     right: 0;
-    bottom: 3px;
+    bottom: -10px;
 
     background: #cd853f;;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
+    -webkit-transform-origin: 0 10%;
+    transform-origin: 0 10%;
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition-duration: 0.5s;
@@ -55,23 +71,15 @@ const NavLink = css`
   &:hover:before,
   &:focus:before,
   &:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust the cubic-bezier values */
-    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust the cubic-bezier values */
-   
+    -webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.10, 0.9); /* Adjust the cubic-bezier values */
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.10, 0.94); /* Adjust the cubic-bezier values */
 
   }
 }
 `;
-const Logo = styled(Link)`
-${NavLink}
-margin-left: 0;
-margin-right: 0;
-margin-bottom: 16px;
-margin-top: -16px;
-font-style: italic;
-`;
+
 
 const MenuBars = styled(FaBars)`
 display: none;
@@ -91,8 +99,10 @@ display: none;
 const NavMenu = styled.div`
 display: flex;
 align-items: center;
-margin-right: -2rem;
-@media screen and (max-width: 768px) {
+
+padding-right: -10px;
+
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -104,9 +114,11 @@ ${NavLink}
 
 const NavButton = styled.div`
 display: flex;
+size:auto;
+min-width: 60px;
 align-items: center;
-margin-right: 1.5rem;
-@media screen and (max-width: 768px) {
+margin-right: 1rem;
+@media screen and (max-width: 800px) {
     display: none;
 }
 `;
@@ -147,7 +159,7 @@ function NavbarEn({ toggle }) {
     <>
 
       <NavWithTransition transparent={!colorChange}>
-      <img src={Logo1} alt="Romania Flag" style={{ height:'60px', width: '50px' , marginTop: '-15px'}}  />
+      <img src={Logo1} alt="Logo" style={{ height:'60px', width: '10vw' , marginTop: '-15px' }}  />
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuDataEn.map((item, index) => (
@@ -155,17 +167,15 @@ function NavbarEn({ toggle }) {
               {item.title}
             </NavMenuLinks>
           ))}
-           <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{ width: '40px', height: 'auto', marginLeft: '20px' }}  /> </a>
-           <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="English Flag" style={{ width: '40px', height: 'auto', marginLeft: '20px' }}  /> </a>
-
-        </NavMenu>
+      </NavMenu>
         <NavButton>
-          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Book us</Button>
+        <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{ width: '4vh', height: 'auto',marginLeft: '0vw' }}  /> </a>
+        <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="English Flag" style={{ width: '4vh', height: 'auto', marginLeft: '0.8vw' }}  /> </a>
+  
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
         </NavButton>
       </NavWithTransition>
     </>
   );
 }
-
-
 export default NavbarEn;

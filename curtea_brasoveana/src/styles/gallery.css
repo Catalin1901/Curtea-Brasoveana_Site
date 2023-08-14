@@ -1,4 +1,4 @@
-.galleryWrap {
+.galerie .galleryWrap {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -9,26 +9,26 @@
     margin-bottom: 10px;
   }
   
-  .galleryWrap .single {
+ .galerie .galleryWrap .single {
     width: 400px;
     cursor: pointer;
   }
   
-  .galleryWrap .single img {
+  .galerie .galleryWrap .single img {
     max-width: 100%;
     margin: auto;
     display: block;
   }
   
-  .galleryWrap .single img {
+  .galerie  .galleryWrap .single img {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.galleryWrap .single img:hover {
+.galerie .galleryWrap .single img:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-  .sliderWrap {
+.galerie .sliderWrap {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -43,7 +43,7 @@
     height: 100%;
   }
   
-  .sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
+  .galerie .sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
     position: fixed;
     cursor: pointer;
     opacity: 1;
@@ -52,28 +52,29 @@
     font-size: 40px;
   }
   
-  .btnNext:hover, .btnPrev:hover, .btnClose:hover {
+  .galerie .btnNext:hover, .btnPrev:hover, .btnClose:hover {
     opacity: 1;
   }
   
-  .sliderWrap .btnClose {
+  .galerie .sliderWrap .btnClose {
     top: 40px;
     right: 40px;
+    color: #cd853f;
   }
   
-  .sliderWrap .btnPrev {
+  .galerie .sliderWrap .btnPrev {
     top: 50%;
     transform: translateY(-50%);
     left: 40px;
   }
   
-  .sliderWrap .btnNext {
+  .galerie  .sliderWrap .btnNext {
     top: 50%;
     transform: translateY(-50%);
     right: 40px;
   }
   
-  .fullScreenImage {
+  .galerie .fullScreenImage {
     width: calc(100%);
     height: calc(100%);
     display: flex;
@@ -81,7 +82,7 @@
     justify-content: center;
   }
   
-  .fullScreenImage img {
+  .galerie .fullScreenImage img {
     max-width: 300%;
     max-height: 100%;
     pointer-events: none;
