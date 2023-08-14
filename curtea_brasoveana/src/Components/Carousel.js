@@ -9,10 +9,10 @@ import '../styles/room_cards.css';
 
 function CardWithCarousel() {
   return (
-    <div className="carousel-container">
+    <div className="room_page_container">
       <Carousel fade>
         <Carousel.Item>
-          <Image src={camera1} alt="First slide" className="carousel-image" />
+          <Image src={camera1} alt="First slide" className="carousel-image"/>
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>

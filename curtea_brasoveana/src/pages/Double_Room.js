@@ -19,7 +19,12 @@ const Double_Room = () => {
         <div>
             <Navbar toggle={toggle} />  {/* NavbarEn */}
             <Dropdown isOpen={isOpen} toggle={toggle} />
+            <Separator space={100} />
+            <h1 style={{textAlign: 'center'}}>Camera Dubla</h1>
+            <Separator space = {50}/>
             <Carousel />
+            <Separator space = {50}/>
+
             
         </div>
     );
