@@ -1,75 +1,85 @@
-import { useState } from 'react'
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCircleChevronLeft, 
-  faCircleChevronRight, 
-  faCircleXmark
-} from '@fortawesome/free-solid-svg-icons'
+  faChevronLeft,
+  faChevronRight,
+  faCircleXmark,
+} from '@fortawesome/free-solid-svg-icons';
+import '../styles/gallery.css';
 
-import '../styles/gallery.css'
-
-const Gallery_component = ({galleryImages}) => {
-
-  const [slideNumber, setSlideNumber] = useState(0)
-  const [openModal, setOpenModal] = useState(false)
+const Gallery_component = ({ galleryImages }) => {
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [openModal, setOpenModal] = useState(false);
 
   const handleOpenModal = (index) => {
-    setSlideNumber(index)
-    setOpenModal(true)
-  }
+    setSlideNumber(index);
+    setOpenModal(true);
+  };
 
-  // Close Modal
   const handleCloseModal = () => {
-    setOpenModal(false)
-  }
+    setOpenModal(false);
+  };
 
-  // Previous Image
   const prevSlide = () => {
-    slideNumber === 0 
-    ? setSlideNumber( galleryImages.length -1 ) 
-    : setSlideNumber( slideNumber - 1 )
-  }
+    setSlideNumber(slideNumber === 0 ? galleryImages.length - 1 : slideNumber - 1);
+  };
 
-  // Next Image  
   const nextSlide = () => {
-    slideNumber + 1 === galleryImages.length 
-    ? setSlideNumber(0) 
-    : setSlideNumber(slideNumber + 1)
-  }
+    setSlideNumber(slideNumber + 1 === galleryImages.length ? 0 : slideNumber + 1);
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (openModal && !event.target.closest('.sliderContent')) {
+        handleCloseModal();
+      }
+    };
+
+    if (openModal) {
+      document.addEventListener('click', handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [openModal]);
 
   return (
     <div>
-
-      {openModal && 
+      {openModal && (
         <div className='sliderWrap'>
-          <FontAwesomeIcon icon={faCircleXmark} className='btnClose' onClick={handleCloseModal}  />
-          <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev' onClick={prevSlide} />
-          <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext' onClick={nextSlide} />
-          <div className='fullScreenImage'>
-            <img src={galleryImages[slideNumber].img} alt='' />
+          <div className='sliderContent'>
+            <FontAwesomeIcon icon={faChevronLeft}  className='btnPrev' onClick={prevSlide}   />
+            <div className='fullScreenImage'>
+              <img src={galleryImages[slideNumber].img} alt='' />
+            </div>
+            <FontAwesomeIcon
+              icon={faChevronRight}
+              className='btnNext'
+              onClick={nextSlide}
+            />
           </div>
+          <FontAwesomeIcon
+            icon={faCircleXmark}
+            className='btnClose'
+            onClick={handleCloseModal}
+          />
         </div>
-      }
+      )}
 
       <div className='galleryWrap'>
-        {
-          galleryImages && galleryImages.map((slide, index) => {
-            return(
-              <div 
-                className='single' 
-                key={index}
-                onClick={ () => handleOpenModal(index) }
-              >
-                <img src={slide.img} alt='' />
-              </div>
-            )
-          })
-        }
+        {galleryImages.map((slide, index) => (
+          <div
+            className='single'
+            key={index}
+            onClick={() => handleOpenModal(index)}
+          >
+            <img src={slide.img} alt='' />
+          </div>
+        ))}
       </div>
-
     </div>
-  )
-}
+  );
+};
 
 export default Gallery_component;
