@@ -1,6 +1,7 @@
 import ImageOne from '../assets/Interior.jpg'
 import ImageTwo from '../assets/Low.jpg'
 import ImageThree from '../assets/Night.jpeg'
+import ImageFour from '../assets/Sun.jpg'
 export const SliderData = [
     {
         title: 'O experienta de neuitat',
@@ -8,7 +9,15 @@ export const SliderData = [
         path: '/home',
         label: 'Book now',
         image: ImageOne,
-        alt: 'House'
+        alt: 'Front'
+    },
+    {
+        title: 'Imagine de seara',
+        price: 'SuperCute',
+        path: '/home',
+        label: 'Book now',
+        image: ImageThree,
+        alt: 'Night View'
     },
 
     {
@@ -17,14 +26,14 @@ export const SliderData = [
         path: '/home',
         label: 'Book now',
         image: ImageTwo,
-        alt: 'House'
+        alt: 'Interior'
     },
     {
-        title: 'Imagine de seara',
-        price: 'SuperCute',
+        title: 'Arhitectura unica',
+        price: 'Original',
         path: '/home',
         label: 'Book now',
-        image: ImageThree,
-        alt: 'House'
+        image: ImageFour,
+        alt: 'Day View'
     }
 ]

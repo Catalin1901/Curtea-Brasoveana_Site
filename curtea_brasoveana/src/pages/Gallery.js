@@ -8,20 +8,47 @@ import Contact from '../Components/Contact.js';
 const Separator = styled.div`
   height: ${(props) => props.space}px; /* Set the desired space using the 'space' prop */
 `;
-const Lobby = [
+const Hotel = [
+  { img: require('../assets/Galerie/Hotel2.jpg') },
   { img: require('../assets/Front.jpeg') },
-  { img: require('../assets/Front3.jpeg') },
-  { img: require('../assets/Front2.jpeg') },
-  { img: require('../assets/Front3.jpeg') },
+  { img: require('../assets/Galerie/Hotel2.jpg') },
+  { img: require('../assets/Galerie/Hotel3.jpg') },
+  { img: require('../assets/Galerie/Hotel3.jpg') },
+  { img: require('../assets/Galerie/Hotel3.jpg') },
+  { img: require('../assets/Galerie/Hotel.jpg') },
   { img: require('../assets/Huge.png') },
+  { img: require('../assets/Galerie/Hotel.jpg') },
+  { img: require('../assets/Huge.png') },  
+  { img: require('../assets/Front.jpeg') },
 ]
-const Suite = [
-  { img: require('../assets/Galerie/Suite.jpg') },
-  { img: require('../assets/Galerie/Suite2.jpg') },
-  { img: require('../assets/Galerie/Suite3.jpg') },
-  { img: require('../assets/Galerie/Suite4.jpg') },
-  { img: require('../assets/Galerie/Suite5.jpeg') },
+const Camere = [
+  { img: require('../assets/Galerie/Camera.jpg') },
+  { img: require('../assets/Galerie/Camera2.jpg') },
+  { img: require('../assets/Galerie/Camera3.jpg') },
+  { img: require('../assets/Galerie/Camera4.jpg') },
+  { img: require('../assets/Galerie/Camera5.jpg') },
 ]
+
+const Restaurant = [
+  { img: require('../assets/Galerie/Restaurant.jpg') },
+  { img: require('../assets/Galerie/Restaurant1.jpg') },
+  { img: require('../assets/Galerie/Restaurant.jpg') },
+  { img: require('../assets/Galerie/Restaurant1.jpg') },
+
+  { img: require('../assets/Galerie/Restaurant1.jpg') },
+
+
+
+]
+
+const Curte = [
+  { img: require('../assets/Galerie/Facilitati.jpg') },
+  { img: require('../assets/Galerie/Facilitati2.jpg') },
+  { img: require('../assets/Galerie/Facilitati.jpg') },
+
+
+]
+
 
 const Gallery = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,18 +61,20 @@ const Gallery = () => {
     <Navbarbackground toggle={toggle}/>  {/* NavbarEn */}
     <Dropdown isOpen={isOpen} toggle={toggle}/>
     <Separator space={100} />
-    <div><h1>Galerie</h1></div>
-    <div><h2>Lobby</h2></div>
+    <div><h2>Hotel</h2></div>
     <Separator space={100} />
-    <Gallery_component galleryImages={Lobby}/>
+    <Gallery_component galleryImages={Hotel}/>
     <Separator space={100} />
-    <div><h2>Suite</h2></div>
-    <Gallery_component galleryImages={Suite}/>
+    <div><h2>Camere</h2></div>
+    <Gallery_component galleryImages={Camere}/>
+    <Separator space={100} />
+    <div><h2>Restaurant</h2></div>
+    <Gallery_component galleryImages={Restaurant}/>
+    <Separator space={100} />
+    <div><h2>Facilitati</h2></div>
+    <Gallery_component galleryImages={Curte}/>
+    <Separator space={150} />
 
-    <Separator space={100} />
-    <Separator space={100} />
-    <Separator space={100} />
-    <Separator space={100} />
     <Contact/>
 
   </div>

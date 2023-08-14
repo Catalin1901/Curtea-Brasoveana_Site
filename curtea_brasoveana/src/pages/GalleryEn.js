@@ -9,14 +9,44 @@ import ContactEn from '../ComponentsEn/ContactEn.js';
 const Separator = styled.div`
   height: ${(props) => props.space}px; /* Set the desired space using the 'space' prop */
 `;
-const galleryImages = [
-  {
-    img: require('../assets/Front.jpeg')  },
-  {
-    img: require('../assets/Front2.jpeg')  },
-  {
-    img: require('../assets/Front3.jpeg') 
-  }
+const Hotel = [
+  { img: require('../assets/Galerie/Hotel2.jpg') },
+  { img: require('../assets/Front.jpeg') },
+  { img: require('../assets/Galerie/Hotel2.jpg') },
+  { img: require('../assets/Galerie/Hotel3.jpg') },
+  { img: require('../assets/Galerie/Hotel3.jpg') },
+  { img: require('../assets/Galerie/Hotel3.jpg') },
+  { img: require('../assets/Galerie/Hotel.jpg') },
+  { img: require('../assets/Huge.png') },
+  { img: require('../assets/Galerie/Hotel.jpg') },
+  { img: require('../assets/Huge.png') },  
+  { img: require('../assets/Front.jpeg') },
+]
+const Camere = [
+  { img: require('../assets/Galerie/Camera.jpg') },
+  { img: require('../assets/Galerie/Camera2.jpg') },
+  { img: require('../assets/Galerie/Camera3.jpg') },
+  { img: require('../assets/Galerie/Camera4.jpg') },
+  { img: require('../assets/Galerie/Camera5.jpg') },
+]
+
+const Restaurant = [
+  { img: require('../assets/Galerie/Restaurant.jpg') },
+  { img: require('../assets/Galerie/Restaurant1.jpg') },
+  { img: require('../assets/Galerie/Restaurant.jpg') },
+  { img: require('../assets/Galerie/Restaurant1.jpg') },
+
+  { img: require('../assets/Galerie/Restaurant1.jpg') },
+
+
+
+]
+
+const Curte = [
+  { img: require('../assets/Galerie/Facilitati.jpg') },
+  { img: require('../assets/Galerie/Facilitati2.jpg') },
+  { img: require('../assets/Galerie/Facilitati.jpg') },
+
 
 ]
 
@@ -28,17 +58,24 @@ const GalleryEn = () => {
     setIsOpen(!isOpen);
   };
     return (
-  <div>
+  <div className='galerie'>
     <NavbarbackgroundEn toggle={toggle}/>  {/* NavbarEn */}
     <DropdownEn isOpen={isOpen} toggle={toggle}/>
     <Separator space={100} />
-    <h1>Engleza</h1>
+    <div><h2>Hotel</h2></div>
     <Separator space={100} />
+    <Gallery_componentEn galleryImages={Hotel}/>
     <Separator space={100} />
+    <div><h2>Rooms</h2></div>
+    <Gallery_componentEn galleryImages={Camere}/>
     <Separator space={100} />
-    <Gallery_componentEn galleryImages={galleryImages}/>
+    <div><h2>Restaurant</h2></div>
+    <Gallery_componentEn galleryImages={Restaurant}/>
     <Separator space={100} />
-    <Separator space={100} />
+    <div><h2>Facilities</h2></div>
+    <Gallery_componentEn galleryImages={Curte}/>
+    <Separator space={150} />
+
     <ContactEn/>
 
   </div>
