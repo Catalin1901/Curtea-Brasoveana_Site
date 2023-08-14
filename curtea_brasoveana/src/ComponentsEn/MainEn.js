@@ -18,7 +18,7 @@ function MainEn() {
 
         <div class="col-12 col-sm-4 d-flex flex-column main-custom">
 
-        <p>The Curtea Brașoveană Hotel is the perfect destination for families looking to recharge with positive energy and to rejuvenate their body and mind in a charming natural setting.</p>          <p>Amplasat în inima Brașovului, acest hotel beneficiază de peisaje pitorești și de o varietate de atracții naturale și culturale din împrejurimi. Zona este binecuvântată cu aer curat, ape limpezi și priveliști impresionante ale munților și pădurilor ce încurajează relaxarea și reconectarea cu natura.</p>
+        <p>The Curtea Brașoveană Hotel is the perfect destination for families looking to recharge with positive energy and to rejuvenate their body and mind in a charming natural setting.</p>
         <p>Located in the heart of Brașov, this hotel benefits from picturesque landscapes and a variety of natural and cultural attractions in the surroundings. The area is blessed with fresh air, clear waters, and impressive views of the mountains and forests, which encourage relaxation and reconnection with nature.</p>
 
         </div>
