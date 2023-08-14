@@ -19,6 +19,7 @@ import Dropdown from './Components/Dropdown.js';
 import Navbar from './Components/Navbar.js';
 import WhatsAppLogo from './Components/Whatsapp.js';
 import Contact from './Components/Contact.js';
+import Double_Room from './pages/Double_Room.js';
 //Routes to the other pages
 function App() {
   const Title = 'Curtea Brasoveana';
@@ -41,6 +42,7 @@ function App() {
         <Route path='/en'element={<HomeEn />} />
         <Route path='/en/rooms'element={<RoomsEn />} />
         <Route path='/en/gallery'element={<GalleryEn />} />
+        <Route path='/double_room'element={<Double_Room />} />
       </Routes>
       </div>
       <Footer />

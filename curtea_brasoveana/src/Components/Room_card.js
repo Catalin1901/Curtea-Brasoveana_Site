@@ -25,7 +25,7 @@ function GroupExample() {
         
       <Card>
         
-        <a href="Rooms" style={linkStyle}>
+        <a href="Double_Room" style={linkStyle}>
         <Card.Img  variant="top" src ={Camera_dubla} />
         <Card.Body>
           <Card.Title>Camera Dubla</Card.Title>
