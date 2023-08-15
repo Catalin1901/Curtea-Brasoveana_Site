@@ -11981,18 +11981,14 @@ textarea.form-control-lg {
   align-self: center;
 }
 
-.room_page_container {
-  position: relative;
-  width: 100%;
-  height: 35vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/*.carousel-image{
+  width: 50vw;
+  height: 15vw;
   justify-content: center;
-  align-items: left;
-  align-self: left;
-  margin-left: 5vw;
-}
-
+  align-self: center;
+  border-radius: 2vw;
+  box-shadow:  8px 8px 8px rgba(0, 0, 0, 0.2);
+}*/
 .carousel-inner {
   width: 100%;
   height: 100%;
@@ -12017,9 +12013,11 @@ textarea.form-control-lg {
 
 @media (max-width: 800px) {
   .carousel-container {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    width: 60vw;
-    height: 35vw;
+    width: 80vw;
+    height: 55vw;
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -12030,33 +12028,26 @@ textarea.form-control-lg {
     justify-content: center;
     align-self: center;
   }
-  .room_page_container {
-    position: relative;
-    width: 100%;
-    height: 35vw;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    align-items: left;
-    align-self: left;
-    margin-left: 5vw;
-  }
   .carousel-inner {
     width: 100%;
     height: 100%;
     justify-content: center;
     align-self: center;
-  }
-  .carousel-fade {
-    width: 60vw;
-    height: 35vw;
     align-self: center;
   }
-  .imagine-carusel {
-    width: 60vw;
-    height: 35vw;
+  .carousel-fade {
+    width: 80vw;
+    height: 55vw;
+    align-self: center;
+    align-items: center;
     justify-content: center;
-    align-self: left;
+    margin-left: 10vw;
+  }
+  .imagine-carusel {
+    width: 80vw;
+    height: 55vw;
+    justify-content: center;
+    align-self: center;
     border-radius: 2vw;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
   }
