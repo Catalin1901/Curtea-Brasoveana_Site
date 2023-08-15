@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Dropdown from '../Components/Dropdown.js';
-import Navbar from '../Components/Navbar.js';
+import Navbarbackground from '../Components/Navbarbackground.js';
 import Double_room from '../Components/Double_room.js';import styled from 'styled-components';
 import Carousel from '../Components/Carousel.js';
 
@@ -17,7 +17,7 @@ const Double_Room = () => {
     return (
 
         <div>
-            <Navbar toggle={toggle} />  {/* NavbarEn */}
+            <Navbarbackground toggle={toggle} />  {/* NavbarEn */}
             <Dropdown isOpen={isOpen} toggle={toggle} />
             <Separator space={100} />
             <h1 style={{textAlign: 'center'}}>Camera Dubla</h1>

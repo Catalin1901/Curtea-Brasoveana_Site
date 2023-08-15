@@ -26,7 +26,7 @@
 }
 
 /* Styles for .title */
-.title {
+.contact-container .title {
     font-size: 2.3vw;
     font-weight: 400;
     text-align: center;
@@ -35,7 +35,7 @@
 }
 
 /* Styles for .text */
-.text {
+.contact-container .text {
     font-size: 1vw;
     font-weight: 400;
     text-align: center;
