@@ -1,15 +1,7 @@
 import '../../src/styles/contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faLock } from '@fortawesome/free-solid-svg-icons';
 
-
-
-
-// const location = {
-//     address: 'Strada Băilor 16, Brașov 500123',
-//     lat: 45.6365891,
-//     lng: 25.5778443
-// }
 
 const mobilephone = '+40735472336';
 const phonenumber = '+40268472336';
@@ -32,10 +24,13 @@ function Contact() {
                 <p className="text">Mobil: <a href={"tel:" + mobilephone}>+4 0735 472 336</a></p>
                 </div>
                 <div className='contact_col'>
-
                 <p className="text"><FontAwesomeIcon icon={faEnvelope} /></p>
                 <p className="text">Email us at <a href={"mailto:" + email1}>office@curteabrasoveana.ro</a></p>
                 <p className="text">Email us at <a href={"mailto:" + email2}>curteabrasoveana@gmail.com   </a></p>
+                </div>
+                <div className='contact_col'>
+                <p className="text"><FontAwesomeIcon icon={faLock} /></p>
+                <p className="text"><a href='/gdpr'>Politica GDPR</a></p>
                 </div>
 
             </div>
