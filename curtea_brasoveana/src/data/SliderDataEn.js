@@ -1,7 +1,7 @@
 import ImageOne from '../assets/Interior.jpg';
 import ImageTwo from '../assets/Low.jpg';
 import ImageThree from '../assets/Night.jpeg';
-
+import ImageFour from '../assets/Sun.jpg';
 export const SliderDataEn = [
   {
     title: 'An Unforgettable Experience',
@@ -27,4 +27,12 @@ export const SliderDataEn = [
     image: ImageThree,
     alt: 'House',
   },
+  {
+    title: 'Cool architecture',
+    price: 'Original',
+    path: '/home',
+    label: 'Book now',
+    image: ImageFour,
+    alt: 'Day View'
+}
 ];

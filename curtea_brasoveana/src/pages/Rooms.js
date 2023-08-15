@@ -15,17 +15,13 @@ const Rooms = () => {
       setIsOpen(!isOpen);
     };
     return (
-     <div>
+     <div className='rooms'>
     <Navbarbackground toggle={toggle}/>
     <Dropdown isOpen={isOpen} toggle={toggle}/>
-        <div class="container">
-            <button type="button" class="btn btn-primary">Click me</button>
-        </div>
-            <h1>
-                Rooms
-            </h1>
+    <Separator space={60} />
+       <h1 >Camere</h1>
         <Carousel></Carousel>
-        <Separator space={60} />
+        <Separator space={100} />
             <Contact/>
     </div>
     );
