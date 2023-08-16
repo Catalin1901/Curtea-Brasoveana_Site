@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { Image } from 'react-bootstrap';
 import camera1 from '../assets/Camera_dubla.jpg';
@@ -11,6 +11,12 @@ import '../styles/room_page.css';
 
 
 function CardWithCarousel() {
+    //Pt schimbat textul in functie de slide
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const handleSlideChange = (selectedIndex) => {
+      setCurrentSlide(selectedIndex);
+    };
   return (
     <div className="room_page_container">
       <Carousel fade>
@@ -59,6 +65,14 @@ function CardWithCarousel() {
 
         </div>
       </div>
+      
+      {/*Asta trebuie sters daca nu iti place*/}
+      <p>
+        {currentSlide === 0 ?
+        'Test1'  : currentSlide === 1
+        ? 'Test2'  : currentSlide === 2
+        ? 'Test3':'Default'}
+      </p>
     </div>
   );
 }

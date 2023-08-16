@@ -60,19 +60,22 @@ const GalleryComponent = ({ galleryImages }) => {
     };
   }, [openModal]);
 
+  // Get the current window width
+  const windowWidth = window.innerWidth;
+
   return (
     <div>
       {openModal && (
         <div
           className='sliderWrap'
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
+          onTouchStart={windowWidth <= 800 ? null : handleTouchStart}
+          onTouchEnd={windowWidth <= 800 ? null : handleTouchEnd}
         >
           <div className='sliderContent'>
             <FontAwesomeIcon
               icon={faChevronLeft}
               className='btnPrev'
-              onClick={prevSlide}
+              onClick={windowWidth <= 800 ? null : prevSlide}
             />
             <div className='fullScreenImage'>
               <img src={galleryImages[slideNumber].img} alt='' />
@@ -80,7 +83,7 @@ const GalleryComponent = ({ galleryImages }) => {
             <FontAwesomeIcon
               icon={faChevronRight}
               className='btnNext'
-              onClick={nextSlide}
+              onClick={windowWidth <= 800 ? null : nextSlide}
             />
           </div>
           <FontAwesomeIcon
@@ -96,7 +99,7 @@ const GalleryComponent = ({ galleryImages }) => {
           <div
             className='single'
             key={index}
-            onClick={() => handleOpenModal(index)}
+            onClick={windowWidth <= 800 ? null : () => handleOpenModal(index)}
           >
             <img src={slide.img} alt='' />
           </div>
