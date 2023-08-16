@@ -1,6 +1,6 @@
 import '../../src/styles/contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faLock, faLocationDot} from '@fortawesome/free-solid-svg-icons';
 
 
 const mobilephone = '+40735472336';
@@ -13,9 +13,12 @@ const email2 = 'curteabrasoveana@gmail.com';
 function Contact() {
     return (
         <div className="contact-container">
-            <div className="Date de contact">
-                <div className='contact_col1'>
-                <p className="title">Date de contact</p>
+            <div className="date_de_contact">
+                <div className='title'>
+                    <p className="title">Date de contact</p>
+                </div>
+                <div className='contact_col'>
+                <p className="text"><FontAwesomeIcon icon={faLocationDot} /></p>
                 <p className="text">Adresa: Strada Republicii nr. 56, Brașov 500030</p>
                 </div>
                 <div className='contact_col'>

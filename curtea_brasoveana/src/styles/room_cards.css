@@ -12016,7 +12016,7 @@ textarea.form-control-lg {
     display: flex;
     flex-direction: row;
     position: relative;
-    width: 80vw;
+    width: 90vw;
     height: 55vw;
     justify-content: center;
     align-items: center;
@@ -12036,15 +12036,15 @@ textarea.form-control-lg {
     align-self: center;
   }
   .carousel-fade {
-    width: 80vw;
+    width: 90vw;
     height: 55vw;
     align-self: center;
     align-items: center;
     justify-content: center;
-    margin-left: 10vw;
+    margin-left: 5vw;
   }
   .imagine-carusel {
-    width: 80vw;
+    width: 90vw;
     height: 55vw;
     justify-content: center;
     align-self: center;
