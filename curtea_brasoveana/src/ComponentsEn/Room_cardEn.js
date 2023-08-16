@@ -1,9 +1,9 @@
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
-import Camera_dubla from '../assets/Camera_dubla.jpg';
-import Camera_tripla from '../assets/Camera_tripla.jpg';
-import Camera_qvadrupla from '../assets/Camera_qvadrupla.jpg';
-import Suite from '../assets/Suite.jpg';
+import Camera_dubla from '../assets/room_cards/Camera_dubla.jpg';
+import Camera_tripla from '../assets/room_cards/Camera_tripla.jpg';
+import Camera_qvadrupla from '../assets/room_cards/Camera_qvadrupla.jpg';
+import Suite from '../assets/room_cards/Suite.jpg';
 import '../styles/room_cards.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEuroSign, faUser } from '@fortawesome/free-solid-svg-icons';

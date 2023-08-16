@@ -1,7 +1,6 @@
 import Dropdown from '../Components/Dropdown.js';
 import Navbarbackground from '../Components/Navbarbackground.js';
 import React, { useState } from 'react';
-import Carousel from '../Components/Carousel.js';
 import '../styles/rooms.css';
 import Contact from '../Components/Contact.js';
 import styled from 'styled-components';
@@ -20,7 +19,6 @@ const Rooms = () => {
     <Dropdown isOpen={isOpen} toggle={toggle}/>
     <Separator space={60} />
        <h1 >Camere</h1>
-        <Carousel></Carousel>
         <Separator space={100} />
             <Contact/>
     </div>

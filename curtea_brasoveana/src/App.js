@@ -7,6 +7,8 @@ import Home from './pages/Home.js';
 import Gallery from './pages/Gallery.js';
 import Rooms from './pages/Rooms.js';
 import Gdpr from './pages/Gdpr.js';
+import DoubleRoom from './pages/DoubleRoom.js';
+import TripleRoom from './pages/TripleRoom.js';
 //Engleza
 import HomeEn from './pages/HomeEn.js';
 import RoomsEn from './pages/RoomsEn.js';
@@ -15,7 +17,6 @@ import GdprEn from './pages/GdprEn.js';
 //Componente
 import GlobalStyle from './globalStyle';
 import WhatsAppLogo from './Components/Whatsapp.js';
-import Double_room from './pages/DoubleRoom.js';
 //Routes to the other pages
 function App() {
   return (
@@ -33,7 +34,8 @@ function App() {
         <Route path='/en/rooms'element={<RoomsEn />} />
         <Route path='/en/gallery'element={<GalleryEn />} />
         <Route path='/en/gdpr'element={<GdprEn />} />
-        <Route path='/double_room'element={<Double_room />} />
+        <Route path='/double_room'element={<DoubleRoom />} />
+        <Route path='/triple_room'element={<TripleRoom />} />
       </Routes>
       </div>
       <Footer />

@@ -1,8 +1,8 @@
 import '../styles/facilities.css';
-import Camera_promote from '../assets/Camera_promote.jpg';
-import Gratar from '../assets/Gratar.jpg';
-import mic_dejun from '../assets/mic_dejun.jpg';
-import sauna from '../assets/sauna.jpg';
+import Camera_promote from '../assets/facilities/Camera_promote.jpg';
+import Gratar from '../assets//facilities/Gratar.jpg';
+import mic_dejun from '../assets/facilities/mic_dejun.jpg';
+import sauna from '../assets/facilities/sauna.jpg';
 
 function FacilitiesEn() {
   return (
