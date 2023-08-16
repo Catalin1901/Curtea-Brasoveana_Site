@@ -22,7 +22,7 @@ function GroupExample() {
         
             <CardGroup>
                 <Card>
-                    <a href="Rooms" style={linkStyle}>
+                    <a href="/en/double_room" style={linkStyle}>
                         <Card.Img variant="top" src={Camera_dubla} />
                         <Card.Body>
                             <Card.Title>Double Room</Card.Title>
@@ -38,7 +38,7 @@ function GroupExample() {
                 </Card>
         
                 <Card>
-                    <a href="Rooms" style={linkStyle}>
+                    <a href="/en/triple_room" style={linkStyle}>
                         <Card.Img variant="top" src={Camera_tripla} />
                         <Card.Body>
                             <Card.Title>Triple Room</Card.Title>
@@ -56,7 +56,7 @@ function GroupExample() {
 
             <CardGroup>
                 <Card>
-                    <a href="Rooms" style={linkStyle}>
+                    <a href="/en/quadruple_room" style={linkStyle}>
                         <Card.Img variant="top" src={Camera_qvadrupla} />
                         <Card.Body>
                             <Card.Title>Quadruple Room</Card.Title>
@@ -71,7 +71,7 @@ function GroupExample() {
                     </a>
                 </Card>
                 <Card>
-                    <a href="Rooms" style={linkStyle}>
+                    <a href="/en/suite" style={linkStyle}>
                         <Card.Img variant="top" src={Suite} />
                         <Card.Body>
                             <Card.Title>Suite</Card.Title>

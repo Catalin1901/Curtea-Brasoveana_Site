@@ -64,7 +64,7 @@ function CardWithCarousel() {
                 </div>
                 <div className="room_description">
                     <p className="title">Detalii camera</p>
-                    <p className="text"><FontAwesomeIcon icon={faBed} /> 3 paturi  1x2m</p>
+                    <p className="text"><FontAwesomeIcon icon={faBed} /> 3 paturi 1x2m</p>
                     <p className="text"><FontAwesomeIcon icon={faExpand} /> Suprafata intre 40 si 50mp</p>
                     <p className="text"><FontAwesomeIcon icon={faUser} /> Potrivita pentru 2 sau 3 persoane</p>
                     <p className="title">Preturi</p>

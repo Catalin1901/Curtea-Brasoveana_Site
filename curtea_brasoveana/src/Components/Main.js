@@ -1,12 +1,15 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
-
+import logo from '../assets/Logo.png'
 import '../styles/main.css';
 
 function Main() {
   return (
     <div className="main">
+      <div className="logo-image">
+        <img src={logo} alt="logo" style={{width: '30%', height:'20vw', alignSelf: 'center', marginLeft: '7vw', marginTop: '-10vw', marginBottom: '5vw'}} />
+      </div>
       <h1 className="text-center">Curtea Brasoveana</h1>
       <div className="d-flex justify-content-center">
         <FontAwesomeIcon icon={faStar} className="star-icon" size='2x' />

@@ -16,6 +16,10 @@ import HomeEn from './pages/HomeEn.js';
 import RoomsEn from './pages/RoomsEn.js';
 import GalleryEn from './pages/GalleryEn.js';
 import GdprEn from './pages/GdprEn.js';
+import DoubleRoomEn from './pages/DoubleRoomEn.js';
+import TripleRoomEn from './pages/TripleRoomEn.js';
+import FourRoomEn from './pages/FourRoomEn.js';
+import SuiteEn from './pages/SuiteEn.js';
 //Componente
 import GlobalStyle from './globalStyle';
 import WhatsAppLogo from './Components/Whatsapp.js';
@@ -39,7 +43,11 @@ function App() {
         <Route path='/double_room'element={<DoubleRoom />} />
         <Route path='/triple_room'element={<TripleRoom />} />
         <Route path='/quadruple_room'element={<FourRoom />} />
-        <Route path='/suite'element={<Suite />} />
+        <Route path='/en/suite'element={<SuiteEn />} />
+        <Route path='/en/double_room'element={<DoubleRoomEn />} />
+        <Route path='/en/triple_room'element={<TripleRoomEn />} />
+        <Route path='/en/quadruple_room'element={<FourRoomEn />} />
+        <Route path='/en/suite'element={<SuiteEn />} />
       </Routes>
       </div>
       <Footer />
