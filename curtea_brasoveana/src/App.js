@@ -9,6 +9,8 @@ import Rooms from './pages/Rooms.js';
 import Gdpr from './pages/Gdpr.js';
 import DoubleRoom from './pages/DoubleRoom.js';
 import TripleRoom from './pages/TripleRoom.js';
+import FourRoom from './pages/FourRoom.js';
+import Suite from './pages/Suite.js';
 //Engleza
 import HomeEn from './pages/HomeEn.js';
 import RoomsEn from './pages/RoomsEn.js';
@@ -36,6 +38,8 @@ function App() {
         <Route path='/en/gdpr'element={<GdprEn />} />
         <Route path='/double_room'element={<DoubleRoom />} />
         <Route path='/triple_room'element={<TripleRoom />} />
+        <Route path='/quadruple_room'element={<FourRoom />} />
+        <Route path='/suite'element={<Suite />} />
       </Routes>
       </div>
       <Footer />

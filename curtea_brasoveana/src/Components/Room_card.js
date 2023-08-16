@@ -59,7 +59,7 @@ function GroupExample() {
 
       <CardGroup>
       <Card>
-        <a href="Rooms" style={linkStyle}>
+        <a href="quadruple_room" style={linkStyle}>
         <Card.Img variant="top" src={Camera_qvadrupla} />
         <Card.Body>
           <Card.Title>Camera Qvuadrupla</Card.Title>
@@ -74,7 +74,7 @@ function GroupExample() {
         </a>
       </Card>
       <Card>
-        <a href="Rooms" style={linkStyle}>
+        <a href="suite" style={linkStyle}>
         <Card.Img variant="top" src={Suite} />
         <Card.Body>
           <Card.Title>Suite</Card.Title>
