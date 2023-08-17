@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Image, React } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 import camera1 from '../assets/triple_room/camera_tripla.jpg';
 import camera2 from '../assets/triple_room/camera_tripla2.jpg';
 import camera3 from '../assets/triple_room/camera_tripla3.jpg';
