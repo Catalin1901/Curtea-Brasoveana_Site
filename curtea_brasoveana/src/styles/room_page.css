@@ -1,3 +1,4 @@
+
 .room_details {
     width: 80%;
     height: 100%;
@@ -20,6 +21,7 @@
     height: 100%;
     justify-content: center;
     align-self: center;
+    align-items: center;
 }
 
 .room_details .title {
@@ -171,4 +173,62 @@
         align-self: center;
     }
 
+}
+
+.button_rezerva{
+
+    width:80%;
+    height: 10%;
+    justify-content: center;
+    align-self: center;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #010101;
+    border-color: #0a0000;
+    font-size: 1.2vw;
+}
+
+@media (max-width: 800px) and (min-width: 500px) { 
+    .button_rezerva{
+
+        width:80%;
+        height: 10%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #010101;
+        border-color: #0a0000;
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 500px) { 
+    .button_rezerva{
+
+        width:70%;
+        height: 12%;
+        justify-content: center;
+        align-self: center;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        margin-left: 15%;
+        margin-right: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #010101;
+        border-color: #0a0000;
+        font-size: 3vw;
+    }
 }

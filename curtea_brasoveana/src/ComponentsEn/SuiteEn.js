@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Image } from 'react-bootstrap';
+import { Image, React } from 'react-bootstrap';
 import camera1 from '../assets/suite/suite.jpg';
 import camera2 from '../assets/suite/suite2.jpg';
 import camera3 from '../assets/suite/suite3.jpg';
@@ -68,6 +68,8 @@ function CardWithCarousel() {
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 120 euro/day* for 3 people</p>
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 140 euro/day* for 4 people</p>
           <p className = "text">*fees will be payed in RON at the BNR exchange rate of the first staying day</p>
+          <Button variant="primary" className="button_rezerva">Rezerva acum</Button>
+
 
         </div>
       </div>

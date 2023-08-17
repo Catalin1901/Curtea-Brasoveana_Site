@@ -161,7 +161,7 @@ function Navbar({ toggle }) {
     <>
 
       <NavWithTransition transparent={!colorChange}>
-      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginLeft: '5vw' }}  />
+      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginRight: '5vw' }}  />
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuData.map((item, index) => (

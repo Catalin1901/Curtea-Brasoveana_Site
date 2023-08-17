@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Image } from 'react-bootstrap';
+import { Image, Button } from 'react-bootstrap';
 import camera1 from '../assets/triple_room/camera_tripla.jpg';
 import camera2 from '../assets/triple_room/camera_tripla2.jpg';
 import camera3 from '../assets/triple_room/camera_tripla3.jpg';
@@ -71,6 +71,7 @@ function CardWithCarousel() {
                     <p className="text"><FontAwesomeIcon icon={faEuroSign} /> 100 euro/zi* pentru 2 persoane</p>
                     <p className="text"><FontAwesomeIcon icon={faEuroSign} /> 110 euro/zi* pentru 3 persoane</p>
                     <p className="text">*preturile se achita in lei la cursul BNR al primei zile de cazare</p>
+                    <Button variant="primary" className="button_rezerva">Rezerva acum</Button>
 
                 </div>
             </div>

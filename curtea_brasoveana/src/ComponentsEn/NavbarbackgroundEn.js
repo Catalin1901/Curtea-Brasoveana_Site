@@ -7,7 +7,7 @@ import {FaBars} from 'react-icons/fa'
 import  { useState, useEffect } from 'react';
 import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
-import Logo1 from '../assets/Logo.svg'
+import Logo1 from '../assets/Logo.png'
 
 
 const Nav = styled.nav`
@@ -148,7 +148,7 @@ function NavbarbackgroundEn({ toggle }) {
     <>
 
       <NavWithTransition >
-      <img src={Logo1} alt="Logo" style={{ height:'60px', width: '10vw' , marginTop: '-15px' }}  />
+      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginRight: '5vw' }}  />
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuDataEn.map((item, index) => (

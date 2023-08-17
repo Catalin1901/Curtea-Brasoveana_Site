@@ -43,7 +43,7 @@ function App() {
         <Route path='/double_room'element={<DoubleRoom />} />
         <Route path='/triple_room'element={<TripleRoom />} />
         <Route path='/quadruple_room'element={<FourRoom />} />
-        <Route path='/en/suite'element={<SuiteEn />} />
+        <Route path='/suite'element={<Suite />} />
         <Route path='/en/double_room'element={<DoubleRoomEn />} />
         <Route path='/en/triple_room'element={<TripleRoomEn />} />
         <Route path='/en/quadruple_room'element={<FourRoomEn />} />
