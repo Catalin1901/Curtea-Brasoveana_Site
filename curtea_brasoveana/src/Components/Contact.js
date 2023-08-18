@@ -69,7 +69,7 @@ function Contact() {
             </div>
             <div className="location">
                     
-                <p className="title">Unde ne găsiti</p>
+                <p className="title">Unde ne găsiți</p>
                 {windowWidth < 800 ? (
                     <>
                         <div className='contact_col'>
