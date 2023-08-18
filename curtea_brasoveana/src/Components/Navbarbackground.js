@@ -188,7 +188,7 @@ function Navbarbackground({ toggle }) {
 
       <NavWithTransition >
       <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
-      <Text>Curtea Brasoveană</Text>
+      <Text>Curtea Braoșveană</Text>
 
         <MenuBars onClick={toggle} />
         <NavMenu>

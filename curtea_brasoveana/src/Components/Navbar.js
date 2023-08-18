@@ -202,7 +202,7 @@ function Navbar({ toggle }) {
 
       <NavWithTransition transparent={!colorChange}>
       <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
-      <Text>Curtea Brasoveană</Text>
+      <Text>Curtea Brașoveană</Text>
         <MenuBars onClick={toggle} />
 
         <NavMenu>

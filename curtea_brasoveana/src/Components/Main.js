@@ -10,7 +10,7 @@ function Main() {
       <div className="logo-image">
         <img src={logo} alt="logo" style={{width: '30%', height:'25vw', alignSelf: 'center', marginTop: '-5vw', marginBottom: '5vw'}} />
       </div>
-      <h1 className="text-center">Curtea Brasoveana</h1>
+      <h1 className="text-center">Curtea Brașoveană</h1>
       <div className="d-flex justify-content-center">
         <FontAwesomeIcon icon={faStar} className="star-icon" size='2x' />
         <FontAwesomeIcon icon={faStar} className="star-icon" size='2x'/>
