@@ -139,7 +139,6 @@ const NavWithTransition = styled.nav`
 
 `;
 
-//trebuie sa transmit toggle pentru a folosi dropwdown-ul
 function Navbarbackground({ toggle }) {
 
 

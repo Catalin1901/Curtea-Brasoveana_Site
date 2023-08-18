@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Image, Button } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import camera1 from '../assets/triple_room/camera_tripla.jpg';
 import camera2 from '../assets/triple_room/camera_tripla2.jpg';
 import camera3 from '../assets/triple_room/camera_tripla3.jpg';
@@ -11,6 +11,8 @@ import { faWind, faShirt, faSnowflake, faTv, faSpa, faWifi, faMugSaucer, faLock,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/room_cards.css';
 import '../styles/room_page.css';
+import { Button } from './Button.js';
+
 
 
 function CardWithCarousel() {
@@ -71,7 +73,7 @@ function CardWithCarousel() {
                     <p className="text"><FontAwesomeIcon icon={faEuroSign} /> 100 euro/zi* pentru 2 persoane</p>
                     <p className="text"><FontAwesomeIcon icon={faEuroSign} /> 110 euro/zi* pentru 3 persoane</p>
                     <p className="text">*preturile se achita in lei la cursul BNR al primei zile de cazare</p>
-                    <Button variant="primary" className="button_rezerva">Rezerva acum</Button>
+                    <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
 
                 </div>
             </div>
