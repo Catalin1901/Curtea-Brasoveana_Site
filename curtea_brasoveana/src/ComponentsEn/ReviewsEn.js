@@ -7,13 +7,16 @@ function Reviews() {
 
     return (
 
-        <div className="gallery-container_reviews">
-            <div className="gallery-item_reviews">
-                <ElfsightWidget widgetId='f746fdc6-9a32-41d9-91cd-ca84b756e24c' />
-                <div className="overlay_reviews">
-                    <p>Reviews</p>
+        <div>
+            <p className='reviews_title'>Our customers' thoughts</p>
+            <div className="gallery-container_reviews">
+                <div className="gallery-item_reviews">
+                    <ElfsightWidget widgetId='f746fdc6-9a32-41d9-91cd-ca84b756e24c' />
+                    <div className="overlay_reviews">
+                        <p>Reviews</p>
+                    </div>
                 </div>
-                </div>
+            </div>
         </div>
 
     );

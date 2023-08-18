@@ -18,7 +18,7 @@ function GroupExample() {
   return (
     <div>
       <div className = "camere">
-      Camerele noastre
+      <p>Camerele noastre</p>
       </div>
       
     <CardGroup>
