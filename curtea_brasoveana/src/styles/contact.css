@@ -61,7 +61,7 @@
       display: -ms-flexbox;
       display: flex;
       background-color: #735C46;
-      height: 90vw;
+      height: auto;
       width: auto;
       margin-bottom: 0;
       /* Flex direction fallback */

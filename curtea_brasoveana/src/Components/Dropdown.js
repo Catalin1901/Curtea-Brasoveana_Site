@@ -8,7 +8,7 @@ import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
 const DropdownContainer = styled.div`
 position: fixed;
-z-index: 999;
+z-index: 999999;
 width: 100%;
 height: 100%;
 background: #cd853f;
