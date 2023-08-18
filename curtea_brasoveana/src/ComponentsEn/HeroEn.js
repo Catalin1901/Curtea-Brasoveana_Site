@@ -5,9 +5,10 @@ import { IoMdArrowRoundForward } from 'react-icons/io';
 import { IoArrowForward, IoArrowBack } from 'react-icons/io5';
 import { Button } from '../Components/Button';
 
+
 const HeroSection = styled.section`
   height: 100vh;
-  max-height: 1100px;
+  max-height: 1200px;
   position: relative;
   overflow: hidden;
   margin-bottom: 10rem;
@@ -17,9 +18,32 @@ const Button2 = styled(Button)`
 
 @media (min-width: 800px) {
  display: none;
+
+
 }
 @media (max-width: 800px) {
+
   display: flex;
+  z-index: 100;
+  position: relative;
+  width: auto;  
+  height: 50px;
+  font-size: 1.4rem;
+  margin-left: 0;
+  margin-top: 30rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: #fff;
+  background: #000d1a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+
+  
 }
 `;
 
@@ -243,8 +267,7 @@ function HeroEn({ slides }) {
                   <HeroContent>
                     <h1>{slide.title}</h1>
                     <p>{slide.price}</p>
-                    { <Button2 to={slide.path} primary="true">{slide.label}
-                      <Arrow />
+                    { <Button2 to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary="true">{slide.label}
                     </Button2> }
                   </HeroContent>
                 </HeroSlider>
