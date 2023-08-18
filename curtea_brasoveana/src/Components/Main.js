@@ -8,7 +8,7 @@ function Main() {
   return (
     <div className="main">
       <div className="logo-image">
-        <img src={logo} alt="logo" style={{width: '30%', height:'20vw', alignSelf: 'center', marginLeft: '7vw', marginTop: '-5vw', marginBottom: '5vw'}} />
+        <img src={logo} alt="logo" style={{width: '30%', height:'20vw', alignSelf: 'center', marginTop: '-5vw', marginBottom: '5vw'}} />
       </div>
       <h1 className="text-center">Curtea Brasoveana</h1>
       <div className="d-flex justify-content-center">
