@@ -29,9 +29,9 @@ function GroupExample() {
                         <a href="double_room" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_dubla} />
                             <Card.Body>
-                                <Card.Title>Camera Matrimoniala</Card.Title>
+                                <Card.Title>Cameră Matrimonială</Card.Title>
                                 <Card.Text>
-                                    Camera dubla unde se pot caza 1 sau 2 persoane.
+                                    Cameră dublă unde se pot caza 1 sau 2 persoane.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -46,9 +46,9 @@ function GroupExample() {
                         <a href="double_room" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_tripla} />
                             <Card.Body>
-                                <Card.Title>Camera Dubla</Card.Title>
+                                <Card.Title>Cameră Dublă</Card.Title>
                                 <Card.Text>
-                                    Camera dubla unde se pot caza 1 sau 2 persoane.
+                                    Cameră dublă unde se pot caza 1 sau 2 persoane.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -65,9 +65,9 @@ function GroupExample() {
                         <a href="triple_room" style={linkStyle}>
                             <Card.Img variant="top" src={Suite} />
                             <Card.Body>
-                                <Card.Title>Camera Tripla</Card.Title>
+                                <Card.Title>Cameră Triplă</Card.Title>
                                 <Card.Text>
-                                    Camera tripla unde se pot caza 2 sau 3 persoane                                
+                                    Cameră triplă unde se pot caza 2 sau 3 persoane                                
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -81,9 +81,9 @@ function GroupExample() {
                         <a href="quadruple_room" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_qvadrupla} />
                             <Card.Body>
-                                <Card.Title>Camera Qvuadrupla</Card.Title>
+                                <Card.Title>Cameră Qvuadruplă</Card.Title>
                                 <Card.Text>
-                                    Camera qvuadrupla unde se pot caza 2, 3 sau 4 persoane.
+                                    Cameră qvuadruplă unde se pot caza 2, 3 sau 4 persoane.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -104,7 +104,7 @@ function GroupExample() {
                             <Card.Body>
                                 <Card.Title>Apartament Junior</Card.Title>
                                 <Card.Text>
-                                    Apartament spatios unde se pot caza 2, 3 sau 4 persoane.
+                                    Apartament spațios unde se pot caza 2, 3 sau 4 persoane.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
@@ -118,9 +118,9 @@ function GroupExample() {
                         <a href="suite" style={linkStyle}>
                             <Card.Img variant="top" src={Suite} />
                             <Card.Body>
-                                <Card.Title>Apartament 4 adulti</Card.Title>
+                                <Card.Title>Apartament</Card.Title>
                                 <Card.Text>
-                                    Apartament spatios unde se pot caza 2, 3 sau 4 persoane
+                                    Apartament spațios unde se pot caza 2, 3 sau 4 persoane
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
