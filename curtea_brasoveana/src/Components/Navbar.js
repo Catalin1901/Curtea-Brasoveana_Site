@@ -8,7 +8,7 @@ import  { useState, useEffect } from 'react';
 import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
 import Logo1 from '../assets/Logo.png'
-
+import SmallLogo from '../assets/Logo_mic.png';
 
 const Nav = styled.nav`
   height: 65px;
@@ -161,6 +161,13 @@ display: flex;
 //trebuie sa transmit toggle pentru a folosi dropwdown-ul
 function Navbar({ toggle }) {
   const [colorChange, setColorChange] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
 
   const handleChangeColor = () => {
     if (window.scrollY >= 80) {
@@ -172,16 +179,29 @@ function Navbar({ toggle }) {
 
   useEffect(() => {
     window.addEventListener('scroll', handleChangeColor);
+    window.addEventListener('resize', handleWindowResize);
+
     return () => {
       window.removeEventListener('scroll', handleChangeColor);
+      window.removeEventListener('resize', handleWindowResize);
     };
   }, []);
+
+  const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
+  let marginRight;
+  if (windowWidth <= 800) {
+    marginRight = '4vw';
+  } else if (windowWidth > 800 && windowWidth <= 1000) {
+    marginRight = '1vw';
+  } else {
+    marginRight = '7vw';
+  }
 
   return (
     <>
 
       <NavWithTransition transparent={!colorChange}>
-      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginRight: '5vw' }} />
+      <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
       <Text>Curtea Brasoveana</Text>
         <MenuBars onClick={toggle} />
 
