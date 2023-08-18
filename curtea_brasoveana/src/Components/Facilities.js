@@ -9,8 +9,7 @@ function Facilities() {
         <div>
         <div className="facilities-intro">
             <h1 className="facilities-title">Facilitati</h1>
-            <p className="facilities-text">Curtea Brasoveana va ofera o gama larga de facilitati pentru a va face sederea cat mai placuta. Punem pe primul loc confortul in sejurul dumneavoastra
-            astfel ca incercam sa va asiguram tot ce aveti nevoie pentru a fi pe deplin satisfacuti la plecare si cu gandul de a reveni la noi</p>
+            <p className="facilities-text">Curtea Brasoveana va ofera o gama larga de facilitati pentru a va face sederea cat mai placuta. </p>
         </div>
         <div className="gallery-container">
           <div className="gallery-item">

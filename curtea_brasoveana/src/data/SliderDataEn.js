@@ -4,6 +4,16 @@ import ImageThree from '../assets/Night.jpeg';
 import ImageFour from '../assets/Sun.jpg';
 export const SliderDataEn = [
   {
+    title: 'Evening View',
+    price: 'SuperCute',
+    path: '/home',
+    label: 'Book now',
+    image: ImageThree,
+    alt: 'House',
+  },
+
+  
+  {
     title: 'An Unforgettable Experience',
     price: 'Because You Deserve It',
     path: '/home',

@@ -24,6 +24,24 @@ const Button2 = styled(Button)`
   display: flex;
   z-index: 100;
   position: relative;
+  width: auto;  
+  height: 50px;
+  font-size: 1.4rem;
+  margin-left: 0;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  color: #fff;
+  background: #000d1a;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
+
+  
 }
 `;
 
@@ -247,8 +265,7 @@ function Hero({ slides }) {
                   <HeroContent>
                     <h1>{slide.title}</h1>
                     <p>{slide.price}</p>
-                    { <Button2 to={slide.path} primary="true">{slide.label}
-                      <Arrow />
+                    { <Button2 to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary="true">{slide.label}
                     </Button2> }
                   </HeroContent>
                 </HeroSlider>

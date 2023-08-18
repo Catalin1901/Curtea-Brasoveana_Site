@@ -137,7 +137,27 @@ const NavWithTransition = styled.nav`
 
 
 `;
-
+const Text = styled.span`
+display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative; 
+  padding-left: 0.5vw;
+  padding-right: 17vw;
+  text-shadow:
+  -0.5px -0.5px 0 black,
+  0.5px -0.5px 0 black,
+  -0.5px 0.5px 0 black,
+  0.5px 0.5px 0 black;
+  color: #fff;
+  @media screen and (min-width: 800px) {
+    display: none;
+}
+`;
 //trebuie sa transmit toggle pentru a folosi dropwdown-ul
 function Navbar({ toggle }) {
   const [colorChange, setColorChange] = useState(false);
@@ -161,9 +181,12 @@ function Navbar({ toggle }) {
     <>
 
       <NavWithTransition transparent={!colorChange}>
-      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginRight: '5vw' }}  />
+      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginRight: '5vw' }} />
+      <Text>Curtea Brasoveana</Text>
         <MenuBars onClick={toggle} />
+
         <NavMenu>
+          
           {MenuData.map((item, index) => (
             <NavMenuLinks to={item.link} key={index}>
               {item.title}

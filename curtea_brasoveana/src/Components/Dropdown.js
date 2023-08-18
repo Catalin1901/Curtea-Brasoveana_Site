@@ -72,11 +72,13 @@ const NavButton = styled.div`
 display: flex;
 justify-content: center;
 rounded: true;
+margin-left: -10px;
 
 `;
 
 function Dropdown({isOpen, toggle}) {
   return (
+
     <DropdownContainer isOpen={isOpen} onClick={toggle} >
         <Icon onClick={toggle}>
             <CloseIcon />

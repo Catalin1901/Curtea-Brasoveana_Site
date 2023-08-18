@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import { Image, Button } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import camera1 from '../assets/double_room/Camera_dubla.jpg';
 import camera2 from '../assets/double_room/camera_dubla2.jpg';
 import camera3 from '../assets/double_room/camera_dubla3.jpg';
@@ -10,6 +10,7 @@ import {faWind, faShirt, faSnowflake, faTv, faSpa, faWifi, faMugSaucer, faLock, 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/room_cards.css';
 import '../styles/room_page.css';
+import { Button } from './Button.js';
 
 
 function CardWithCarousel() {
@@ -67,18 +68,11 @@ function CardWithCarousel() {
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 78 euro/zi* pentru 1 persoana</p>
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 90 euro/zi* pentru 2 persoane</p>
           <p className = "text">*preturile se achita in lei la cursul BNR al primei zile de cazare</p>
-          <Button variant="primary" className="button_rezerva">Rezerva acum</Button>
-
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
         </div>
       </div>
       
-      {/*Asta trebuie sters daca nu iti place*/}
-      <p>
-        {currentSlide === 0 ?
-        'Test1'  : currentSlide === 1
-        ? 'Test2'  : currentSlide === 2
-        ? 'Test3':'Default'}
-      </p>
+
     </div>
   );
 }
