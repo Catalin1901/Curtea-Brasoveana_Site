@@ -41,35 +41,35 @@ function CardWithCarousel() {
       </Carousel>
       <div className="room_details">
         <div className="room_facilities">
-          <p className = "title"> Facilitatile camerei</p>
+          <p className = "title"> Facilitățile camerei</p>
           <p className = "text"><FontAwesomeIcon icon={faTv} size="lg" style={{color: "#000000",}} />   televizor</p>
           {/* <p className = "text"><FontAwesomeIcon icon={faTemperatureArrowDown} size="lg" style={{color: "#000000",}} /> aer conditionat</p> */}
-          <p className = "text"><FontAwesomeIcon icon={faTemperatureArrowDown} /> aer conditionat</p>
+          <p className = "text"><FontAwesomeIcon icon={faTemperatureArrowDown} /> aer condiționat</p>
           <p className = "text"><FontAwesomeIcon icon={faSnowflake} /> frigider, minibar</p>
           <p className = "text"><FontAwesomeIcon icon={faWifi} /> wifi</p>
           <p className = "text"><FontAwesomeIcon icon={faMugSaucer} /> mic dejun inclus</p>
           <p className = "text"><FontAwesomeIcon icon={faLock} style={{"--fa-primary-color": "#000000", "--fa-secondary-color": "#000000",}}  /> seif</p>
-          <p className = "text"><FontAwesomeIcon icon={faWind} /> uscator de par</p>
+          <p className = "text"><FontAwesomeIcon icon={faWind} /> uscător de păr</p>
           <p className = "text"><FontAwesomeIcon icon={faShower} /> baie proprie</p>
-          <p className = "text"><FontAwesomeIcon icon={faPlug} /> priza baie 110/220 V</p>
-          <p className = "title"> Facilitati comune</p>
-          <p className = "text"><FontAwesomeIcon icon={faShirt} /> spalatorie</p>
-          <p className = "text"><FontAwesomeIcon icon={faSpa} /> sauna</p>
+          <p className = "text"><FontAwesomeIcon icon={faPlug} /> priză baie 110/220 V</p>
+          <p className = "title"> Facilități comune</p>
+          <p className = "text"><FontAwesomeIcon icon={faShirt} /> spălătorie</p>
+          <p className = "text"><FontAwesomeIcon icon={faSpa} /> saună</p>
           <p className = "text"><FontAwesomeIcon icon={faDumbbell} /> fitness</p>
           <p className = "text"><FontAwesomeIcon icon={faScissors} /> frizerie  </p>
 
         </div>
         <div className="room_description">
-          <p className = "title">Detalii camera</p>
+          <p className = "title">Detalii cameră</p>
           <p className = "text"><FontAwesomeIcon icon={faBed} /> 2 paturi matrimoniale 2x1.6m</p>
-          <p className = "text"><FontAwesomeIcon icon={faExpand} /> Suprafata intre 50 si 70mp</p>
-          <p className = "text"><FontAwesomeIcon icon={faUser} /> Potrivita pentru 2, 3 sau 4 persoane</p>
-          <p className = "title">Preturi</p>
+          <p className = "text"><FontAwesomeIcon icon={faExpand} /> Suprafață între 50 si 70mp</p>
+          <p className = "text"><FontAwesomeIcon icon={faUser} /> Potrivită pentru 2, 3 sau 4 persoane</p>
+          <p className = "title">Prețuri</p>
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 110 euro/zi* pentru 2 persoane</p>
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 120 euro/zi* pentru 3 persoane</p>
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 140 euro/zi* pentru 4 persoane</p>
-          <p className = "text">*preturile se achita in lei la cursul BNR al primei zile de cazare</p>
-          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
+          <p className = "text">*prețurile se achită in lei la cursul BNR al primei zile de cazare</p>
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezervă</Button>
 
 
         </div>
