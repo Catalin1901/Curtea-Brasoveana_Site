@@ -144,7 +144,7 @@ display: flex;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 5vw;
   position: relative; 
   padding-left: 0.5vw;
   padding-right: 17vw;

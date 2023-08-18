@@ -1,45 +1,40 @@
-/* Adjust the font size and text shadow for both mobile and desktop */
+
 .main-custom {
-  font-size: 4vw; /* Slightly bigger font size for mobile */
+  font-size: 3.5vw;
+  width: 80%; 
   @media (min-width: 800px) {
     font-size: 1.5vw;
     text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.2),
                  1px 1px 0 rgba(0, 0, 0, 0.2);
+
+
   }
 }
 
-/* Style the h1 element */
 .main h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 4.5vw; /* Slightly bigger font size for mobile */
+  font-size: 4.5vw;
   font-weight: bold;
-  letter-spacing: 2.5px; /* Increased letter-spacing for readability */
   text-transform: uppercase;
   color: #990000;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1); /* Slightly lighter shadow */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
   margin: auto;
-  padding: 0; 
+  padding: auto;
 }
 
 /* Media query for desktop font size */
 @media (min-width: 800px) {
   .main h1 {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 }
 
-
 .star-icon {
-    margin: 0 5px;
-    color: goldenrod;
-    padding-bottom: 5%;
-    
+  margin: 0 5px;
+  color: goldenrod;
+  padding-bottom: 5%;
+}
 
-  }
-  
-.main{
-    text-align: center;
-    
-  }
-
-
+.main {
+  text-align: center;
+}
