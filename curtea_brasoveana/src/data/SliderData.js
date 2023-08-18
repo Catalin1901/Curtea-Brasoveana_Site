@@ -4,18 +4,18 @@ import ImageThree from '../assets/Night.jpeg'
 import ImageFour from '../assets/Sun.jpg'
 export const SliderData = [
     {
-        title: 'O experienta de neuitat',
-        price: 'Pentru ca meriti',
+        title: 'O expriență de neuitat',
+        price: 'Pentru că meriți',
         path: '/home',
-        label: 'Book now',
+        label: 'Rezervă',
         image: ImageOne,
         alt: 'Front'
     },
     {
         title: 'Imagine de seara',
-        price: 'SuperCute',
+        price: 'De neuitat',
         path: '/home',
-        label: 'Book now',
+        label: 'Rezervă',
         image: ImageThree,
         alt: 'Night View'
     },
@@ -24,15 +24,15 @@ export const SliderData = [
         title: 'Inima Brasovului',
         price: 'Oaza ta de liniste',
         path: '/home',
-        label: 'Book now',
+        label: 'Rezervă',
         image: ImageTwo,
         alt: 'Interior'
     },
     {
-        title: 'Arhitectura unica',
-        price: 'Original',
+        title: 'Arhitectură unică',
+        price: 'Așa cum nu ai mai văzut',
         path: '/home',
-        label: 'Book now',
+        label: 'Rezervă',
         image: ImageFour,
         alt: 'Day View'
     }

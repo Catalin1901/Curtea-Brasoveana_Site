@@ -188,7 +188,7 @@ function Navbarbackground({ toggle }) {
 
       <NavWithTransition >
       <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
-      <Text>Curtea Brasoveana</Text>
+      <Text>Curtea Brasoveană</Text>
 
         <MenuBars onClick={toggle} />
         <NavMenu>
@@ -202,7 +202,7 @@ function Navbarbackground({ toggle }) {
         <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{ width: '4vh', height: 'auto',marginLeft: '0vw' }}  /> </a>
         <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="English Flag" style={{ width: '4vh', height: 'auto', marginLeft: '0.8vw' }}  /> </a>
   
-          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezerva</Button>
+          <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezervă</Button>
         </NavButton>
       </NavWithTransition>
     </>

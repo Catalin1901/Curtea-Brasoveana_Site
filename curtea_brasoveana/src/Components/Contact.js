@@ -64,12 +64,12 @@ function Contact() {
                         <div className='contact_col'>
                             <p className="text"><FontAwesomeIcon icon={faLock} /></p>
                             <p className="text">Info</p>
-                            <p className="text"><a href='/gdpr'>Politica GDPR</a></p>
+                            <p className="text"><a href='/gdpr'>Politică GDPR</a></p>
                         </div></>}
             </div>
             <div className="location">
                     
-                <p className="title">Unde ne gasiti</p>
+                <p className="title">Unde ne găsiti</p>
                 {windowWidth < 800 ? (
                     <>
                         <div className='contact_col'>
