@@ -144,7 +144,7 @@ display: flex;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 6vw;
+  font-size: 5.5vw;
   position: relative; 
   padding-left: 0.5vw;
   padding-right: 18vw;
@@ -190,7 +190,7 @@ function Navbar({ toggle }) {
   const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
   let marginRight;
   if (windowWidth <= 800) {
-    marginRight = '10px';
+    marginRight = '-10px';
   } else if (windowWidth > 800 && windowWidth <= 1000) {
     marginRight = '1vw';
   } else {
