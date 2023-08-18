@@ -21,6 +21,7 @@ const Button2 = styled(Button)`
 
 }
 @media (max-width: 800px) {
+
   display: flex;
   z-index: 100;
   position: relative;
@@ -28,7 +29,7 @@ const Button2 = styled(Button)`
   height: 50px;
   font-size: 1.4rem;
   margin-left: 0;
-  margin-top: 1rem;
+  margin-top: 35rem;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   color: #fff;
