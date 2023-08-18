@@ -10,6 +10,7 @@
   .main-custom {
     font-size: 2vw;
   }
+
 }
 
 .main h1 {
@@ -30,7 +31,11 @@
     font-size: 4vw;
   }
 }
-
+@media (min-width: 1200px){
+  .main p{
+  font-size: 1.5vw;
+}
+}
 .star-icon {
   margin: 0 5px;
   color: goldenrod;
