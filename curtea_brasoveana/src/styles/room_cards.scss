@@ -70,12 +70,10 @@
 
 
 .camere{
-  align-self: center;
-  margin-bottom: 2vw;
+  font-size: 4vw;
+  margin: auto;
+  padding: auto;
   text-align: center;
-  font-size: 3vw;
-  font-family: 'Times New Roman', Times, serif;
-
 }
 
 .card-footer{
@@ -95,6 +93,8 @@
     margin-left: 0vw;
     margin-right: 0vw;
     flex-direction: column;
+    margin-bottom: 0vw;
+
   }
 
   .card-img-top {
@@ -113,12 +113,12 @@
   }
 
   .card-title {
-    font-size: 4vw;
+    font-size: 6vw;
     text-align: center;
   }
 
   .card-text {
-    font-size: 3.5vw;
+    font-size: 5vw;
     text-align: center;
   }
 
@@ -128,7 +128,7 @@
 
   .card-footer{
     text-align: center;
-    font-size: 3vw;
+    font-size: 5vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 80%;

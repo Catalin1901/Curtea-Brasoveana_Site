@@ -95,8 +95,8 @@ function Dropdown({isOpen, toggle}) {
    
             <Button primary='true' round='true' big='false' to='/https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html'>Rezerva</Button>
             </NavButton>
-            <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto'}} /> </a>
-            <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="Uk Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto'}} /> </a>
+            <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto' , paddingLeft:'10px'}} /> </a>
+            <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="Uk Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto', paddingLeft:'10px'}} /> </a>
             </DropdownMenu>
         </DropdownWrapper>
     </DropdownContainer>  

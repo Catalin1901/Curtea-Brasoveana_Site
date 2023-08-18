@@ -10,8 +10,13 @@
     text-align: center;
 }
 
+.facilities-title{
+    font-size: 4vw;
+    margin: auto;
+    padding: auto;
+}
 .facilities-text {
-    font-size: 5.5vw; 
+    font-size: 3vw; 
     font-weight: 500;
     margin-left: 5vw; 
     margin-right: 5vw; 
