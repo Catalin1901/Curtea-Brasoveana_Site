@@ -188,11 +188,13 @@ function Navbar({ toggle }) {
   }, []);
 
   const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
+  const marginRight = windowWidth <= 800 ? '3vw' : '6vw';
+
   return (
     <>
 
       <NavWithTransition transparent={!colorChange}>
-      <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: '3vw' }} />
+      <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
       <Text>Curtea Brasoveana</Text>
         <MenuBars onClick={toggle} />
 
