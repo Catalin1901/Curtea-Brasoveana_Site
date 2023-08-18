@@ -194,7 +194,7 @@ function Navbar({ toggle }) {
   } else if (windowWidth > 800 && windowWidth <= 1000) {
     marginRight = '1vw';
   } else {
-    marginRight = '7vw';
+    marginRight = '8vw';
   }
 
   return (

@@ -8,6 +8,7 @@ import  { useState, useEffect } from 'react';
 import RoIcon from '../assets/Ro.svg'
 import EnIcon from '../assets/En.svg'
 import Logo1 from '../assets/Logo.png'
+import SmallLogo from '../assets/Logo_mic.png';
 
 
 const Nav = styled.nav`
@@ -139,15 +140,58 @@ const NavWithTransition = styled.nav`
 
 `;
 
-function Navbarbackground({ toggle }) {
+const Text = styled.span`
+display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 5vw;
+  position: relative; 
+  padding-left: 0.5vw;
+  padding-right: 17vw;
+  text-shadow:
+  -0.5px -0.5px 0 black,
+  0.5px -0.5px 0 black,
+  -0.5px 0.5px 0 black,
+  0.5px 0.5px 0 black;
+  color: #fff;
+  @media screen and (min-width: 800px) {
+    display: none;
+}
+`;
 
+function Navbarbackground({ toggle }) {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const handleWindowResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+  const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
+  let marginRight;
+  if (windowWidth <= 800) {
+    marginRight = '4vw';
+  } else if (windowWidth > 800 && windowWidth <= 1000) {
+    marginRight = '1vw';
+  } else {
+    marginRight = '8vw';
+  }
 
 
   return (
     <>
 
       <NavWithTransition >
-      <img src={Logo1} alt="Logo" style={{ height:'50px', width: '4vw' , marginTop: '-10px  ', marginRight: '5vw' }}  />
+      <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
+      <Text>Curtea Brasoveana</Text>
+
         <MenuBars onClick={toggle} />
         <NavMenu>
           {MenuData.map((item, index) => (
