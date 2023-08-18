@@ -37,7 +37,7 @@ const NavLink = css`
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 35px;
   position: relative; 
   padding-left: 1vw;
   text-shadow: 
@@ -144,10 +144,10 @@ display: flex;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 5vw;
+  font-size: 6vw;
   position: relative; 
   padding-left: 0.5vw;
-  padding-right: 17vw;
+  padding-right: 18vw;
   text-shadow:
   -0.5px -0.5px 0 black,
   0.5px -0.5px 0 black,
@@ -190,7 +190,7 @@ function Navbar({ toggle }) {
   const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
   let marginRight;
   if (windowWidth <= 800) {
-    marginRight = '4vw';
+    marginRight = '10px';
   } else if (windowWidth > 800 && windowWidth <= 1000) {
     marginRight = '1vw';
   } else {

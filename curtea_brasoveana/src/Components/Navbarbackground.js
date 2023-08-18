@@ -12,7 +12,7 @@ import SmallLogo from '../assets/Logo_mic.png';
 
 
 const Nav = styled.nav`
-  height: 65px;S
+  height: 65px;
   display: flex;
   justify-content: space-between;
   padding: 0.6rem 0.8rem;
@@ -38,7 +38,7 @@ const NavLink = css`
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 35px;
   position: relative; 
   padding-left: 1vw;
   text-shadow: 
@@ -54,13 +54,13 @@ const NavLink = css`
     height: 3px;
     left: 0;
     right: 0;
-    bottom: 3px;
+    bottom: -10px;
 
     background: #cd853f;;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
-    -webkit-transform-origin: 0 50%;
-    transform-origin: 0 50%;
+    -webkit-transform-origin: 0 10%;
+    transform-origin: 0 10%;
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition-duration: 0.5s;
@@ -74,11 +74,10 @@ const NavLink = css`
   &:hover:before,
   &:focus:before,
   &:active:before {
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust the cubic-bezier values */
-    transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Adjust the cubic-bezier values */
-   
+    -webkit-transform: scaleX(0.9);
+    transform: scaleX(0.9);
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.46, 0.10, 0.9); /* Adjust the cubic-bezier values */
+    transition-timing-function: cubic-bezier(0.25, 0.46, 0.10, 0.94); /* Adjust the cubic-bezier values */
 
   }
 }
@@ -139,7 +138,6 @@ const NavWithTransition = styled.nav`
 
 
 `;
-
 const Text = styled.span`
 display: flex;
   align-items: center;
@@ -147,10 +145,10 @@ display: flex;
   height: 100%;
   cursor: pointer;
   text-decoration: none;
-  font-size: 5vw;
+  font-size: 6vw;
   position: relative; 
   padding-left: 0.5vw;
-  padding-right: 17vw;
+  padding-right: 18vw;
   text-shadow:
   -0.5px -0.5px 0 black,
   0.5px -0.5px 0 black,
@@ -177,11 +175,11 @@ function Navbarbackground({ toggle }) {
   const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
   let marginRight;
   if (windowWidth <= 800) {
-    marginRight = '4vw';
+    marginRight = '-10px';
   } else if (windowWidth > 800 && windowWidth <= 1000) {
     marginRight = '1vw';
   } else {
-    marginRight = '8vw';
+    marginRight = '7.5vw';
   }
 
 

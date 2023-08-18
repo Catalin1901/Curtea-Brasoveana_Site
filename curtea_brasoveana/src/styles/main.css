@@ -1,23 +1,27 @@
 /* Adjust the font size and text shadow for both mobile and desktop */
 .main-custom {
   width: 100%;
-  font-size: 3vw;
+  font-weight: 500;
+
+  font-size: 4vw;
   text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.2),
                1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 550px) {
   .main-custom {
-    font-size: 2vw;
+    font-size: 2.5vw;
+    font-weight: 500;
   }
 
 }
 
 .main h1 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 3.5vw;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4vw;
   font-weight: bold;
   letter-spacing: 2.5px;
+  
   text-transform: uppercase;
   color: #990000;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
@@ -27,8 +31,10 @@
 
 /* Media query for desktop font size */
 @media (min-width: 800px) {
-  .main h1 {
-    font-size: 4vw;
+  .main p {
+    font-size: 2vw;
+    font-weight: 500;
+
   }
 }
 @media (min-width: 1200px){
