@@ -1,20 +1,22 @@
-
+/* Adjust the font size and text shadow for both mobile and desktop */
 .main-custom {
-  font-size: 3.5vw;
-  width: 80%; 
-  @media (min-width: 800px) {
-    font-size: 1.5vw;
-    text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.2),
-                 1px 1px 0 rgba(0, 0, 0, 0.2);
+  width: 100%;
+  font-size: 3vw;
+  text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.2),
+               1px 1px 0 rgba(0, 0, 0, 0.2);
+}
 
-
+@media (min-width: 550px) {
+  .main-custom {
+    font-size: 2vw;
   }
 }
 
 .main h1 {
   font-family: 'Oswald', sans-serif;
-  font-size: 4.5vw;
+  font-size: 3.5vw;
   font-weight: bold;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #990000;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
