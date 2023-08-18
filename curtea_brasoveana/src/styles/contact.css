@@ -75,6 +75,9 @@
     .date_de_contact {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+      @media screen and (max-width: 801px) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     }
   
     .date_de_contact .title {
