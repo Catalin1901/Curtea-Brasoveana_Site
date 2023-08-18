@@ -188,7 +188,14 @@ function Navbar({ toggle }) {
   }, []);
 
   const logoSrc = windowWidth <= 800 ? Logo1 :SmallLogo  ;
-  const marginRight = windowWidth <= 800 ? '3vw' : '6vw';
+  let marginRight;
+  if (windowWidth <= 800) {
+    marginRight = '4vw';
+  } else if (windowWidth > 800 && windowWidth <= 1000) {
+    marginRight = '1vw';
+  } else {
+    marginRight = '7vw';
+  }
 
   return (
     <>

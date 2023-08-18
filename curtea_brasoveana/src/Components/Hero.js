@@ -7,7 +7,7 @@ import { Button } from '../Components/Button';
 
 const HeroSection = styled.section`
   height: 100vh;
-  max-height: 1100px;
+  max-height: 1200px;
   position: relative;
   overflow: hidden;
   margin-bottom: 10rem;
@@ -29,7 +29,7 @@ const Button2 = styled(Button)`
   height: 50px;
   font-size: 1.4rem;
   margin-left: 0;
-  margin-top: 35rem;
+  margin-top: 30rem;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   color: #fff;
