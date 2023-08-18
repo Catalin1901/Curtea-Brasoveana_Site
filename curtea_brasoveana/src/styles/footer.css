@@ -13,6 +13,8 @@
 
   align-items: center;
   justify-content: space-between;
+  width:10%;
+  margin-left: 45%;
 }
 
 .footer-logo img {
@@ -23,8 +25,10 @@
 
   align-items: center;
   justify-content: center;
-  margin-left: auto; 
-  ;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+
 }
 
 .footer-social a {
@@ -37,6 +41,13 @@
   color: #888;
 }
 
+.footer-social .logo_footer{
+  width: 45px;
+  height: 45px;
+  align-self: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}
 @media (max-width: 800px)
 {
   .footer {

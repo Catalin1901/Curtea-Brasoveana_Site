@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="footer-social">
           <a href={facebookLink} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebookF} style={{color: "#005eff",}} size="3x" />          </a>
-          <img src={logo} alt="Logo" style={{ height:'50px', width: '50px' , marginTop: '-22px', marginRight: '1vw' }}  />
+          <img src={logo} alt="Logo" className='logo_footer'  />
           <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faSquareWhatsapp} size="3x" style={{color: "#25d366",}} />
           </a>
