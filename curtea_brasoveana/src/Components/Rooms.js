@@ -6,7 +6,7 @@ import Camera_qvadrupla from '../assets/room_cards/Camera_qvadrupla.jpg';
 import Suite from '../assets/room_cards/Suite.jpg';
 import '../styles/room_cards.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEuroSign, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEuroSign, faUser, faBed } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -29,6 +29,23 @@ function GroupExample() {
                         <a href="double_room" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_dubla} />
                             <Card.Body>
+                                <Card.Title>Camera Matrimoniala</Card.Title>
+                                <Card.Text>
+                                    Camera dubla unde se pot caza 1 sau 2 persoane.
+                                </Card.Text>
+                            </Card.Body>
+                            <Card.Footer>
+                                <small className="text-muted">78/90 <FontAwesomeIcon icon={faEuroSign} /></small>
+                                <small className="text-muted">1 pat dublu <FontAwesomeIcon icon={faBed} style={{ color: "#000000", }} /></small>
+                                <small className="text-muted">1-2 <FontAwesomeIcon icon={faUser} /></small>
+                            </Card.Footer>
+                        </a>
+                    </Card>
+
+                    <Card>
+                        <a href="double_room" style={linkStyle}>
+                            <Card.Img variant="top" src={Camera_tripla} />
+                            <Card.Body>
                                 <Card.Title>Camera Dubla</Card.Title>
                                 <Card.Text>
                                     Camera dubla unde se pot caza 1 sau 2 persoane.
@@ -36,29 +53,30 @@ function GroupExample() {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">78/90 <FontAwesomeIcon icon={faEuroSign} /></small>
+                                <small className="text-muted">2 paturi <FontAwesomeIcon icon={faBed} style={{ color: "#000000", }} /></small>
                                 <small className="text-muted">1-2 <FontAwesomeIcon icon={faUser} /></small>
                             </Card.Footer>
                         </a>
                     </Card>
+                </CardGroup>
 
-                    <Card>
+                <CardGroup>
+                <Card>
                         <a href="triple_room" style={linkStyle}>
-                            <Card.Img variant="top" src={Camera_tripla} />
+                            <Card.Img variant="top" src={Suite} />
                             <Card.Body>
                                 <Card.Title>Camera Tripla</Card.Title>
                                 <Card.Text>
-                                    Camera tripla unde se pot caza 2 sau 3 persoane.
+                                    Camera tripla unde se pot caza 2 sau 3 persoane                                
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">100/110 <FontAwesomeIcon icon={faEuroSign} /></small>
+                                <small className="text-muted">3 paturi <FontAwesomeIcon icon={faBed} style={{color: "#000000",}} /></small>
                                 <small className="text-muted">2-3 <FontAwesomeIcon icon={faUser} /></small>
                             </Card.Footer>
                         </a>
                     </Card>
-                </CardGroup>
-
-                <CardGroup>
                     <Card>
                         <a href="quadruple_room" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_qvadrupla} />
@@ -70,40 +88,28 @@ function GroupExample() {
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">110/120/130 <FontAwesomeIcon icon={faEuroSign} /></small>
+                                <small className="text-muted">4 paturi <FontAwesomeIcon icon={faBed} style={{ color: "#000000", }} /></small>
                                 <small className="text-muted">2-3-4 <FontAwesomeIcon icon={faUser} /></small>
                             </Card.Footer>
                         </a>
                     </Card>
-                    <Card>
-                        <a href="suite" style={linkStyle}>
-                            <Card.Img variant="top" src={Suite} />
-                            <Card.Body>
-                                <Card.Title>Suite</Card.Title>
-                                <Card.Text>
-                                    Apartament spatios unde se pot caza 2 3 sau 4 persoane
-                                </Card.Text>
-                            </Card.Body>
-                            <Card.Footer>
-                                <small className="text-muted">110/120/130 <FontAwesomeIcon icon={faEuroSign} /></small>
-                                <small className="text-muted">2-3-4 <FontAwesomeIcon icon={faUser} /></small>
-                            </Card.Footer>
-                        </a>
-                    </Card>
+                    
                 </CardGroup>
 
 
                 <CardGroup>
                     <Card>
-                        <a href="quadruple_room" style={linkStyle}>
+                        <a href="suite" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_qvadrupla} />
                             <Card.Body>
-                                <Card.Title>Camera Qvuadrupla</Card.Title>
+                                <Card.Title>Apartament Junior</Card.Title>
                                 <Card.Text>
-                                    Camera qvuadrupla unde se pot caza 2, 3 sau 4 persoane.
+                                    Apartament spatios unde se pot caza 2, 3 sau 4 persoane.
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">110/120/130 <FontAwesomeIcon icon={faEuroSign} /></small>
+                                <small className="text-muted">2 paturi duble <FontAwesomeIcon icon={faBed} style={{ color: "#000000", }} /></small>
                                 <small className="text-muted">2-3-4 <FontAwesomeIcon icon={faUser} /></small>
                             </Card.Footer>
                         </a>
@@ -112,13 +118,14 @@ function GroupExample() {
                         <a href="suite" style={linkStyle}>
                             <Card.Img variant="top" src={Suite} />
                             <Card.Body>
-                                <Card.Title>Suite</Card.Title>
+                                <Card.Title>Apartament 4 adulti</Card.Title>
                                 <Card.Text>
-                                    Apartament spatios unde se pot caza 2 3 sau 4 persoane
+                                    Apartament spatios unde se pot caza 2, 3 sau 4 persoane
                                 </Card.Text>
                             </Card.Body>
                             <Card.Footer>
                                 <small className="text-muted">110/120/130 <FontAwesomeIcon icon={faEuroSign} /></small>
+                                <small className="text-muted">4 paturi <FontAwesomeIcon icon={faBed} style={{ color: "#000000", }} /></small>
                                 <small className="text-muted">2-3-4 <FontAwesomeIcon icon={faUser} /></small>
                             </Card.Footer>
                         </a>

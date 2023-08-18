@@ -77,9 +77,9 @@ function GroupExample() {
         <a href="suite" style={linkStyle}>
         <Card.Img variant="top" src={Suite} />
         <Card.Body>
-          <Card.Title>Suite</Card.Title>
+          <Card.Title>Apartament</Card.Title>
           <Card.Text>
-            Apartament spatios unde se pot caza 2 3 sau 4 persoane
+            Apartament spatios unde se pot caza 2, 3 sau 4 persoane
           </Card.Text>
         </Card.Body>
         <Card.Footer>
