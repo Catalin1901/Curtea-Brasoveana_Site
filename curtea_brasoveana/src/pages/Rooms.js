@@ -22,7 +22,6 @@ const Rooms = () => {
         <Separator space={100} />
         <Camere/>
         <Separator space={100} />
-
         <Contact/>
 
     </div>

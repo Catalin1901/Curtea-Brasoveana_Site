@@ -12115,21 +12115,20 @@ textarea.form-control-lg {
   }
   .camere_cards .card {
     transition: transform 0.3s ease;
-    height: 60vh;
+    height: 90vw;
     border-color: rgb(255, 255, 255);
-    margin-bottom: 5vw;
+    margin-bottom: 10vw;
   }
   .camere_cards .card:hover {
     transform: scale(1);
     transform: translateY(0);
   }
   .camere_cards .card-img-top {
-    width: 35vw;
-    height: 60vh;
+    width: 80%;
+    height: 60vw;
+    margin-left: 10%;
     align-self: center;
-    margin-left: 2vw;
     margin-right: 5vw;
-    margin-left: 5vw;
     border-radius: 2vw;
     transition: transform 0.5s ease;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
@@ -12139,18 +12138,32 @@ textarea.form-control-lg {
   }
   .camere_cards .card-title {
     color: black;
-    font-size: 1.75vw;
+    font-size: 3vw;
     text-align: center;
     font-weight: 600;
     font-family: "Times New Roman", Times, serif;
   }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .camere_cards .card-title {
+    font-size: 4.5vw;
+  }
+}
+@media (max-width: 800px) {
   .camere_cards .card-text {
     color: black;
-    font-size: 1.35vw;
+    font-size: 2vw;
     text-align: center;
     font-weight: 100;
     font-family: "Times New Roman", Times, serif;
   }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .camere_cards .card-text {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 800px) {
   .camere_cards .camere {
     align-self: center;
     margin-bottom: 2vw;
@@ -12160,12 +12173,17 @@ textarea.form-control-lg {
   }
   .camere_cards .card-footer {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 2vw;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     align-self: center;
     margin-left: 10%;
+  }
+}
+@media (max-width: 800px) and (max-width: 500px) {
+  .camere_cards .card-footer {
+    font-size: 3.5vw;
   }
 }
 
