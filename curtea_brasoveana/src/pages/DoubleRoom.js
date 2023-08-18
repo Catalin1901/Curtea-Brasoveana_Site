@@ -19,7 +19,7 @@ const Double_Room = () => {
             <Navbarbackground toggle={toggle} />  {/* NavbarEn */}
             <Dropdown isOpen={isOpen} toggle={toggle} />
             <Separator space={100} />
-            <h1 style={{textAlign: 'center'}}>Camera Dubla</h1>
+            <h1 style={{textAlign: 'center'}}>Cameră Dublă</h1>
             <Separator space = {50}/>
             <Double_room />
             <Separator space = {50}/>

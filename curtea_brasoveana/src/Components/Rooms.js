@@ -26,7 +26,7 @@ function GroupExample() {
 
                     <Card>
 
-                        <a href="double_room" style={linkStyle}>
+                        <a href="camera_dubla" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_dubla} />
                             <Card.Body>
                                 <Card.Title>Cameră Matrimonială</Card.Title>
@@ -43,7 +43,7 @@ function GroupExample() {
                     </Card>
 
                     <Card>
-                        <a href="double_room" style={linkStyle}>
+                        <a href="camera_dubla" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_tripla} />
                             <Card.Body>
                                 <Card.Title>Cameră Dublă</Card.Title>
@@ -62,7 +62,7 @@ function GroupExample() {
 
                 <CardGroup>
                 <Card>
-                        <a href="triple_room" style={linkStyle}>
+                        <a href="camera_tripla" style={linkStyle}>
                             <Card.Img variant="top" src={Suite} />
                             <Card.Body>
                                 <Card.Title>Cameră Triplă</Card.Title>
@@ -78,10 +78,10 @@ function GroupExample() {
                         </a>
                     </Card>
                     <Card>
-                        <a href="quadruple_room" style={linkStyle}>
+                        <a href="camera_cvadrupla" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_qvadrupla} />
                             <Card.Body>
-                                <Card.Title>Cameră Qvuadruplă</Card.Title>
+                                <Card.Title>Cameră Cvadruplă</Card.Title>
                                 <Card.Text>
                                     Cameră qvuadruplă unde se pot caza 2, 3 sau 4 persoane.
                                 </Card.Text>
@@ -99,7 +99,7 @@ function GroupExample() {
 
                 <CardGroup>
                     <Card>
-                        <a href="suite" style={linkStyle}>
+                        <a href="apartament" style={linkStyle}>
                             <Card.Img variant="top" src={Camera_qvadrupla} />
                             <Card.Body>
                                 <Card.Title>Apartament Junior</Card.Title>
@@ -115,7 +115,7 @@ function GroupExample() {
                         </a>
                     </Card>
                     <Card>
-                        <a href="suite" style={linkStyle}>
+                        <a href="apartament" style={linkStyle}>
                             <Card.Img variant="top" src={Suite} />
                             <Card.Body>
                                 <Card.Title>Apartament</Card.Title>

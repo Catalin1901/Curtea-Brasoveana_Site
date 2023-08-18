@@ -40,10 +40,10 @@ function App() {
         <Route path='/en/rooms'element={<RoomsEn />} />
         <Route path='/en/gallery'element={<GalleryEn />} />
         <Route path='/en/gdpr'element={<GdprEn />} />
-        <Route path='/double_room'element={<DoubleRoom />} />
-        <Route path='/triple_room'element={<TripleRoom />} />
-        <Route path='/quadruple_room'element={<FourRoom />} />
-        <Route path='/suite'element={<Suite />} />
+        <Route path='/camera_dubla'element={<DoubleRoom />} />
+        <Route path='/camera_tripla'element={<TripleRoom />} />
+        <Route path='/camera_cvadrupla'element={<FourRoom />} />
+        <Route path='/apartament'element={<Suite />} />
         <Route path='/en/double_room'element={<DoubleRoomEn />} />
         <Route path='/en/triple_room'element={<TripleRoomEn />} />
         <Route path='/en/quadruple_room'element={<FourRoomEn />} />
