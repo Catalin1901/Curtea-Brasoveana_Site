@@ -89,7 +89,7 @@ function DropdownEn({isOpen, toggle}) {
                     </DropdownLink>
 ))} 
             <NavButton>
-          <Button primary='true' round='true' big='false' to='/https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html'>Book now</Button>
+          <Button primary='true' round='true' big='false' to='https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html'>Book now</Button>
             </NavButton>
             <a href="/" rel="noopener noreferrer"> <img src={RoIcon} alt="Romania Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto'}} /> </a>
             <a href="/en" rel="noopener noreferrer"> <img src={EnIcon} alt="Uk Flag" style={{display:'flex', justifyContent:'center', maxWidth: '60px', alignItems: 'center', margin:'auto'}} /> </a>

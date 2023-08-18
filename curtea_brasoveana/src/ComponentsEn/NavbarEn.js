@@ -197,11 +197,21 @@ function NavbarEn({ toggle }) {
     marginRight = '8vw';
   }
 
+  let marginLeft;
+  if (windowWidth <= 500) {
+    marginLeft = '-5vw';
+  } else if (windowWidth > 500 && windowWidth <= 800) {
+    marginLeft = '-3vw';
+  } else {
+    marginLeft = '0';
+  }
+
+
   return (
     <>
 
       <NavWithTransition transparent={!colorChange}>
-      <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight }} />
+      <img src={logoSrc} alt="Logo" style={{ height: '50px', width: '48px', marginTop: '-10px', marginRight: marginRight, marginLeft: marginLeft }} />
       <Text>Curtea Brașoveană</Text>
         <MenuBars onClick={toggle} />
 
