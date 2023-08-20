@@ -73,14 +73,6 @@ function CardWithCarousel() {
 
         </div>
       </div>
-      
-      {/*Asta trebuie sters daca nu iti place*/}
-      <p>
-        {currentSlide === 0 ?
-        'Test1'  : currentSlide === 1
-        ? 'Test2'  : currentSlide === 2
-        ? 'Test3':'Default'}
-      </p>
     </div>
   );
 }

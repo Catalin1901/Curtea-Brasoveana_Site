@@ -71,13 +71,6 @@ function CardWithCarousel() {
           <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Rezervă</Button>
         </div>
       </div>
-      {/* Asta trebuie șters dacă nu îți place */}
-      <p>
-        {currentSlide === 0 ?
-        'Test1' : currentSlide === 1
-        ? 'Test2' : currentSlide === 2
-        ? 'Test3' : 'Default'}
-      </p>
     </div>
   );
 }
