@@ -11919,9 +11919,10 @@ textarea.form-control-lg {
 }
 
 .camere {
-  font-size: 3vw;
+  font-size: 5vw;
   margin: auto;
   padding: auto;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -11986,9 +11987,6 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 800px) {
-  .camere {
-    font-size: 3vw;
-  }
   .card-footer {
     text-align: center;
     font-size: 3vw;
@@ -12139,11 +12137,11 @@ textarea.form-control-lg {
   }
 }
 .camere_cards .camere {
-  align-self: center;
-  margin-bottom: 2vw;
+  font-size: 5vw;
+  margin: auto;
+  padding: auto;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-size: 3vw;
-  font-family: "Times New Roman", Times, serif;
 }
 .camere_cards .card-footer {
   text-align: center;
@@ -12218,13 +12216,6 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 800px) {
-  .camere_cards .camere {
-    align-self: center;
-    margin-bottom: 2vw;
-    text-align: center;
-    font-size: 3vw;
-    font-family: "Times New Roman", Times, serif;
-  }
   .camere_cards .card-footer {
     text-align: center;
     font-size: 3vw;

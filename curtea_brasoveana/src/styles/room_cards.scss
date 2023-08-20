@@ -89,10 +89,12 @@
 
 
 .camere{
-  font-size: 3vw;
+  font-size: 5vw;
   margin: auto;
   padding: auto;
+  text-shadow:  1px 1px 0px rgba(0,0,0,0.2);
   text-align: center;
+
 }
 
 .card-footer{
@@ -159,9 +161,7 @@
     }
   }
 
-  .camere{
-    font-size: 3vw;
-  }
+
 
   .card-footer{
     text-align: center;
@@ -342,15 +342,14 @@
   
   }
   
-  
   .camere{
-    align-self: center;
-    margin-bottom: 2vw;
+    font-size: 5vw;
+    margin: auto;
+    padding: auto;
+    text-shadow:  1px 1px 0px rgba(0,0,0,0.2);
     text-align: center;
-    font-size: 3vw;
-    font-family: 'Times New Roman', Times, serif;
-  
-  }
+
+}
   
   .card-footer{
     text-align: center;
@@ -440,16 +439,6 @@
       @media (max-width: 500px){
         font-size: 3.5vw;
       }
-    }
-    
-    
-    .camere{
-      align-self: center;
-      margin-bottom: 2vw;
-      text-align: center;
-      font-size: 3vw;
-      font-family: 'Times New Roman', Times, serif;
-    
     }
     
     .card-footer{
