@@ -73,8 +73,6 @@ function CardWithCarousel() {
           <p className = "text"><FontAwesomeIcon icon={faEuroSign} /> 110 euro/day* for 3 people</p>
           <p className = "text">*fees will be payed in RON at the BNR exchange rate of the first staying day</p>
           <Button to="https://www.booking.com/hotel/ro/curtea-brasoveana.ro.html" primary='true'>Book now</Button>
-
-
         </div>
       </div>
     </div>

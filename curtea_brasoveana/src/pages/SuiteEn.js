@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Dropdown from '../Components/Dropdown.js';
+import Dropdown from '../ComponentsEn/DropdownEn.js';
 import Navbarbackground from '../Components/Navbarbackground.js';
 import SuiteEn from '../ComponentsEn/SuiteEn.js';
 import styled from 'styled-components';
