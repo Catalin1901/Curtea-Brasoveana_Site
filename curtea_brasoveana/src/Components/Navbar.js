@@ -15,7 +15,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 0.6rem 0.8rem;
-  z-index: 100;
+  z-index: 999999;
   position: fixed;
   width: 100%;
   background: #cd853f
@@ -129,7 +129,7 @@ const NavWithTransition = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  z-index: 100;
+  z-index: 999999;
   position: fixed;
   width: 100%;
   background: ${props => (props.transparent ? 'transparent' : '#cd853f')};

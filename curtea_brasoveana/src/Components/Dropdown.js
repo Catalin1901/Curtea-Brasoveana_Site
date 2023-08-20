@@ -39,7 +39,7 @@ const DropdownWrapper = styled.div`
 const DropdownMenu = styled.div`
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: repeat(6, 80px);
+grid-template-rows: repeat(4, 80px);
 text-align: center;
 background-color: #cd853f;
 text-shadow: 
@@ -49,7 +49,7 @@ text-shadow:
  0.5px 0.5px 0 black;
 margin-bottom: 4rem;
 @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
+    grid-template-rows: repeat(4, 60px);
 }
 
 `;
@@ -72,7 +72,6 @@ const NavButton = styled.div`
 display: flex;
 justify-content: center;
 rounded: true;
-margin-left: -10px;
 
 `;
 

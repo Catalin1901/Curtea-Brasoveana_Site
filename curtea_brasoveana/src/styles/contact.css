@@ -71,7 +71,8 @@
     .date_de_contact {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-
+      align-self: center;
+      text-align: center;
     }
   
     .date_de_contact .title {
