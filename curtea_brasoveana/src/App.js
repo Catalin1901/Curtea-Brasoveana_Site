@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './Components/Footer.js';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'; // Import useLocation
 //Romana
 import Home from './pages/Home.js';
 import Gallery from './pages/Gallery.js';
@@ -24,6 +24,18 @@ import SuiteEn from './pages/SuiteEn.js';
 import GlobalStyle from './globalStyle';
 import WhatsAppLogo from './Components/Whatsapp.js';
 //Routes to the other pages
+
+//Functions:
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scroll(0, 0); 
+  }, [pathname]);
+
+  return null;
+}
+//Main App
 function App() {
   return (
     <Router>
@@ -51,6 +63,7 @@ function App() {
       </Routes>
       </div>
       <Footer />
+      <ScrollToTop />
     </div>
     </Router>
   );
