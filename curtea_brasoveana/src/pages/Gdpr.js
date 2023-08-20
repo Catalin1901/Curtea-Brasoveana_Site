@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/gdpr.css'; // Import the CSS file for styling
 import Dropdown from '../Components/Dropdown.js';
-import Navbar from '../Components/Navbarbackground';
+import Navbar from '../Components/Navbarbackground.js';
 import Contact from '../Components/Contact.js';
 import styled from 'styled-components';
 const Separator = styled.div`

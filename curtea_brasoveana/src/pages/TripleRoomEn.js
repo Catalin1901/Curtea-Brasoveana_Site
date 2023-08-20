@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Dropdown from '../ComponentsEn/DropdownEn.js';
-import Navbarbackground from '../Components/Navbarbackground.js';
+import Navbarbackground from '../ComponentsEn/NavbarbackgroundEn.js';
 import Triple_roomEn from '../ComponentsEn/Triple_roomEn.js';
 import styled from 'styled-components';
 import { IoTrendingUpOutline } from 'react-icons/io5';

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/gdpr.css'; // Import the CSS file for styling
 import Dropdown from '../ComponentsEn/DropdownEn.js';
-import Navbar from '../ComponentsEn/NavbarbackgroundEn';
+import Navbar from '../ComponentsEn/NavbarbackgroundEn.js';
 import Contact from '../ComponentsEn/ContactEn.js';
 import styled from 'styled-components';
 
