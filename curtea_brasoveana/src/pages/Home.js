@@ -24,7 +24,7 @@ const Home = () => {
     return (
 
         <div>
-        <Navbar toggle={toggle}/>  {/* NavbarEn */}
+        <Navbar toggle={toggle}/>  {/*NavbarEn*/}
         <Dropdown isOpen={isOpen} toggle={toggle}/>
             <Hero slides={SliderData}/>
             <Separator space={60} />

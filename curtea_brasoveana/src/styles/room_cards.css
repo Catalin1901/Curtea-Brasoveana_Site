@@ -11867,7 +11867,7 @@ textarea.form-control-lg {
 
 .card {
   transition: transform 0.3s ease;
-  height: 75vw;
+  height: 55vw;
   border-color: rgb(255, 255, 255);
 }
 
@@ -11878,7 +11878,7 @@ textarea.form-control-lg {
 
 .card-img-top {
   width: 35vw;
-  height: 60vw;
+  height: 35vw;
   align-self: center;
   margin-left: 2vw;
   margin-right: 5vw;
@@ -12089,7 +12089,7 @@ textarea.form-control-lg {
 }
 .camere_cards .card {
   transition: transform 0.3s ease;
-  height: 75vw;
+  height: 60vw;
   border-color: rgb(255, 255, 255);
   margin-bottom: 5vw;
 }
@@ -12100,7 +12100,7 @@ textarea.form-control-lg {
 }
 .camere_cards .card-img-top {
   width: 35vw;
-  height: 60vw;
+  height: 40vw;
   align-self: center;
   margin-left: 2vw;
   margin-right: 5vw;
