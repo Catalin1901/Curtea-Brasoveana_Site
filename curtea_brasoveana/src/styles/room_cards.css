@@ -12089,7 +12089,7 @@ textarea.form-control-lg {
 }
 .camere_cards .card {
   transition: transform 0.3s ease;
-  height: 60vw;
+  height: 55vw;
   border-color: rgb(255, 255, 255);
   margin-bottom: 5vw;
 }
@@ -12100,7 +12100,7 @@ textarea.form-control-lg {
 }
 .camere_cards .card-img-top {
   width: 35vw;
-  height: 40vw;
+  height: 35vw;
   align-self: center;
   margin-left: 2vw;
   margin-right: 5vw;
@@ -12142,6 +12142,7 @@ textarea.form-control-lg {
   padding: auto;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   text-align: center;
+  margin-bottom: 10vw;
 }
 .camere_cards .card-footer {
   text-align: center;

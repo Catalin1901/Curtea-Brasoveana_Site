@@ -1,6 +1,7 @@
 import { ElfsightWidget } from 'react-elfsight-widget';
 import '../../src/styles/reviews.css'
 
+{/* <ElfsightWidget widgetId='f746fdc6-9a32-41d9-91cd-ca84b756e24c' /> */}
 
 
 function Reviews() {
@@ -10,7 +11,7 @@ function Reviews() {
         <p className = 'reviews_title'>Ce spun clienții noștri despre noi</p>
         <div className="gallery-container_reviews">
             <div className="gallery-item_reviews">
-                <ElfsightWidget widgetId='f746fdc6-9a32-41d9-91cd-ca84b756e24c' />
+                <ElfsightWidget widgetId='e8e6774c-459b-4a8a-96d2-ede06538efe6' />
                 <div className="overlay_reviews">
                     <p>Reviews</p>
                 </div>
